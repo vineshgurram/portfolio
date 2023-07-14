@@ -52,7 +52,7 @@ body {
 .header {
     padding: 2rem 0;
     .nav {
-        transform: translateY(-100%);
+        transform: translateY(-200%);
         transition: 1s ease all;
         position: fixed;
         top: 0;
@@ -130,7 +130,6 @@ body {
                 margin-bottom: 8px;
                 border-radius: 10px;
                 background-color: $secondary-color;
-                
             }
 
             .btn-1,
@@ -143,12 +142,10 @@ body {
         }
 
         .close-btn.active {
-
             .btn-1 {
                 transform: rotate(-45deg);
                 transition: 0.5s ease all;
                 position: absolute;
-               
             }
 
             .btn-2 {
@@ -164,40 +161,31 @@ body {
     }
 }
 
-// .first {
-//     background: green;
-// }
-
-// .second {
-//     background: orange;
-// }
-
-.intro-section{
+.intro-section {
     text-align: center;
-    h2{
+    h2 {
         font-family: $extra-light;
-        color:$secondary-color;
+        color: $secondary-color;
         font-size: 13rem;
         line-height: 120%;
     }
 
-    h1{
+    h1 {
         font-family: $extra-bold;
-        color:$secondary-color;
+        color: $secondary-color;
         font-size: 14rem;
         line-height: 130%;
         letter-spacing: 1px;
         margin: 0;
     }
 
-    .profile-img_block{
-        .profile-img{
+    .profile-img_block {
+        .profile-img {
             width: 30rem;
-        border-radius: 100%;
+            border-radius: 100%;
         }
     }
 }
-
 
 .footer {
     background-color: $slate-color;
@@ -209,12 +197,12 @@ body {
         justify-content: space-around;
         margin-bottom: 4.5rem;
 
-        .social-icon i{
+        .social-icon i {
             color: $secondary-color;
             font-size: 5rem;
             padding: 2rem 4rem;
         }
-        
+
         i.fa-linkedin {
             &:hover {
                 color: #0e76a8;
@@ -222,7 +210,7 @@ body {
                 transition: 0.5s ease;
             }
         }
-        
+
         i.fa-envelope {
             &:hover {
                 color: #c71610;
@@ -231,7 +219,7 @@ body {
                 transition: 0.5s ease-out;
             }
         }
-        
+
         i.fa-github {
             &:hover {
                 color: #f5f5f5;
@@ -239,8 +227,43 @@ body {
                 transition: 0.5s ease;
             }
         }
-        
     }
+}
 
-     
+@include for-big-desktop-up {
+    html {
+        font-size: 59.5%;
+        scroll-behavior: smooth;
+    }
+}
+
+@include for-desktop-up {
+    html {
+        font-size: 56.5%;
+        scroll-behavior: smooth;
+    }
+}
+
+@include for-laptop-up {
+    html {
+        font-size: 56.5%;
+        scroll-behavior: smooth;
+    }
+}
+
+@include for-tablet-portrait-up {
+}
+
+@include for-tablet-landscape-up {
+    html {
+        font-size: 51%;
+        scroll-behavior: smooth;
+    }
+}
+
+@include for-phone-only {
+    html {
+        font-size: 55%;
+        scroll-behavior: smooth;
+    }
 }
