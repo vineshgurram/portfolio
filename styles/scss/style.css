@@ -9,10 +9,14 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  transition: 500ms ease all;
 }
 
 body {
-  background-color: #0C090A;
+  background: #2980b9;
+  background: linear-gradient(to right, #2c3e50, #2980b9);
+  font-family: "metropolisregular";
+  color: #FFFFF0;
 }
 
 .pt-100 {
@@ -47,14 +51,30 @@ body {
   margin-bottom: 5rem;
 }
 
+.mb-25 {
+  margin-bottom: 2.5rem;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
+  max-width: 1728px;
 }
 
-.header {
-  padding: 2rem 0;
+.container-md {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1536px;
 }
+
+.main-heading {
+  font-family: "metropolisextra_bold";
+  color: #FFFFF0;
+  font-size: 10rem;
+  line-height: 130%;
+  letter-spacing: 5px;
+}
+
 .header .nav {
   transform: translateY(-200%);
   transition: 1s ease all;
@@ -63,7 +83,7 @@ body {
   bottom: 0;
   height: 100vh;
   width: 100%;
-  background-color: #063970;
+  background-color: #0C090A;
 }
 .header .nav ul {
   list-style: none;
@@ -86,11 +106,16 @@ body {
   transition: 0.5s ease all;
 }
 .header .btn-wrap {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: -moz-max-content;
+  width: max-content;
   text-align: right;
   position: relative;
   z-index: 11;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  padding: 1.5rem;
 }
 .header .btn-wrap .close-btn {
   background-color: transparent;
@@ -100,9 +125,6 @@ body {
   cursor: pointer;
   position: relative;
   height: 50px;
-  position: fixed;
-  top: 5%;
-  right: 5%;
 }
 .header .btn-wrap .close-btn .btn {
   display: block;
@@ -111,6 +133,9 @@ body {
   margin-bottom: 8px;
   border-radius: 10px;
   background-color: #FFFFF0;
+}
+.header .btn-wrap .close-btn .btn:last-child {
+  margin-bottom: 0;
 }
 .header .btn-wrap .close-btn .btn-1,
 .header .btn-wrap .close-btn .btn-2,
@@ -133,25 +158,101 @@ body {
 }
 
 .intro-section {
-  text-align: center;
+  height: 100vh;
+  padding-top: 8%;
 }
-.intro-section h2 {
+.intro-section .left-box {
+  display: inline-block;
+  width: 65%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+.intro-section .left-box h2 {
   font-family: "metropolisextra_light";
   color: #FFFFF0;
-  font-size: 13rem;
+  font-size: 11rem;
   line-height: 120%;
 }
-.intro-section h1 {
+.intro-section .left-box h1 {
   font-family: "metropolisextra_bold";
   color: #FFFFF0;
-  font-size: 14rem;
+  font-size: 16rem;
   line-height: 130%;
-  letter-spacing: 1px;
+  letter-spacing: 5px;
   margin: 0;
 }
-.intro-section .profile-img_block .profile-img {
+.intro-section .right-box {
+  display: inline-block;
+  width: 35%;
+  vertical-align: middle;
+  text-align: center;
+}
+.intro-section .right-box .profile-img_block .profile-img {
   width: 30rem;
   border-radius: 100%;
+}
+.intro-section .right-box h2 {
+  font-family: "metropolisregular";
+  color: #FFFFF0;
+  font-size: 3rem;
+  line-height: 130%;
+  letter-spacing: 1px;
+}
+
+.about-section h3 {
+  font-family: "metropolismedium";
+  font-size: 3.5rem;
+  line-height: 180%;
+}
+.about-section .about-info p {
+  font-size: 2.5rem;
+  line-height: 180%;
+}
+.about-section .btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 2.5rem;
+  line-height: 150%;
+  border-radius: 1.5rem;
+  background-color: #097969;
+  color: #FFFFF0;
+}
+.about-section .btn i {
+  margin-right: 1rem;
+}
+
+.project-section .project-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  grid-row-gap: 5rem;
+}
+.project-section .project-wrap .project-box .project-img {
+  min-height: 300px;
+}
+.project-section .project-wrap .project-box .project-img img {
+  border-radius: 10px;
+  max-width: 500px;
+  display: block;
+}
+.project-section .project-wrap .project-box .project-info .project-name {
+  font-size: 3rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+}
+.project-section .project-wrap .project-box .project-info .techology-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.project-section .project-wrap .project-box .project-info .techology-name button {
+  padding: 1rem;
+  font-size: 1.8rem;
+  line-height: 150%;
+  border: none;
+  border-radius: 8px;
 }
 
 .footer {
@@ -168,6 +269,9 @@ body {
   color: #FFFFF0;
   font-size: 5rem;
   padding: 2rem 4rem;
+}
+.footer .footer-links i.fa-linkedin {
+  border: none;
 }
 .footer .footer-links i.fa-linkedin:hover {
   color: #0e76a8;
@@ -186,31 +290,52 @@ body {
   transition: 0.5s ease;
 }
 
+.social-side-nav {
+  position: fixed;
+  left: 0;
+  top: 50%;
+}
+.social-side-nav .side-icon img {
+  display: block;
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 59.5%;
     scroll-behavior: smooth;
+    background-color: red;
+  }
+}
+@media (max-width: 1600px) {
+  html {
+    font-size: 59.5%;
+    scroll-behavior: smooth;
+    background-color: blue;
   }
 }
 @media (max-width: 1500px) {
   html {
     font-size: 56.5%;
     scroll-behavior: smooth;
+    background-color: green;
   }
 }
 @media (max-width: 1300px) {
   html {
-    font-size: 56.5%;
+    font-size: 55.5%;
     scroll-behavior: smooth;
+    background-color: yellow;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1279px) {
   html {
     font-size: 51%;
     scroll-behavior: smooth;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   html {
     font-size: 55%;
     scroll-behavior: smooth;

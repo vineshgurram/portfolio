@@ -41,8 +41,8 @@
 
 @font-face {
     font-family: 'metropolismedium';
-    src: url('../../fonts/Metropolis-Medium/metropolis-medium.woffa2') format('woff2'),
-         url('../../fonts/Metropolis-Medium/metropolis-medium.woffa') format('woff');
+    src: url('../../fonts/Metropolis-Medium/metropolis-medium.woff2') format('woff2'),
+         url('../../fonts/Metropolis-Medium/metropolis-medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
