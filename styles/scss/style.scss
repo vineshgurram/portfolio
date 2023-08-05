@@ -265,14 +265,44 @@ body {
         border-radius: 1.5rem;
         background-color: #097969;
         color: $secondary-color;
+        transition: 50ms ease all;
 
         i {
             margin-right: 1rem;
         }
+        &:hover{
+            background-color: #0d9380;
+        }
     }
+
+    
 }
 
 .skills-section {
+    .skills-icon-wrap{
+        text-align: center;
+
+        .skills-icon-box{
+            display: inline-block;
+            width: 20%;
+            margin-right: -2px;
+
+            .skills-icon{
+
+                i{
+                    font-size: 12rem;
+                    line-height: 150%;
+                }
+            }
+            h3{
+                font-size: 3rem;
+                line-height: 150%;
+                letter-spacing: 2px;
+                font-family: $extra-light;
+            }
+        }
+    
+}
 }
 
 .project-section {
@@ -289,6 +319,7 @@ body {
                     border-radius: 10px;
                     max-width: 500px;
                     display: block;
+                    width: 100%;
                 }
             }
             .project-info {
@@ -314,6 +345,8 @@ body {
     }
 }
 
+
+
 .footer {
     background-color: $slate-color;
     padding: 4.5rem 0;
@@ -321,13 +354,12 @@ body {
     .footer-links {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        margin-bottom: 4.5rem;
+        justify-content: end;
 
         .social-icon i {
             color: $secondary-color;
             font-size: 5rem;
-            padding: 2rem 4rem;
+            padding: 2rem;
         }
 
         i.fa-linkedin {
@@ -355,6 +387,15 @@ body {
                 transition: 0.5s ease;
             }
         }
+    }
+
+    .copyright-txt{
+        text-align: right;
+        font-size: 2rem;
+        line-height: 200%;
+        margin-top: 2rem;
+        font-family: $extra-light;
+        letter-spacing: 2px;
     }
 }
 
