@@ -65,6 +65,11 @@ body {
     max-width: 1536px;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 .main-heading {
     font-family: $extra-bold;
     color: $secondary-color;
@@ -87,11 +92,11 @@ body {
 
         ul {
             list-style: none;
-            font-size: 8rem;
+            font-size: 7.5rem;
             letter-spacing: 1px;
             line-height: 200%;
             text-align: center;
-            padding-block: 7.5%;
+            padding-block: 6.5%;
 
             li {
                 a {
@@ -194,7 +199,7 @@ body {
 
 .intro-section {
     height: 100vh;
-    padding-top: 8%;
+    padding-top: 7%;
     .left-box {
         display: inline-block;
         width: 65%;
@@ -204,8 +209,8 @@ body {
         h2 {
             font-family: $extra-light;
             color: $secondary-color;
-            font-size: 11rem;
-            line-height: 120%;
+            font-size: 8rem;
+            line-height: 180%;
         }
 
         h1 {
@@ -228,6 +233,7 @@ body {
             .profile-img {
                 width: 30rem;
                 border-radius: 100%;
+                margin: 0 auto;
             }
         }
 
@@ -284,11 +290,9 @@ body {
 
         .project-box {
             .project-img {
-                min-height: 300px;
+                min-height: 30rem;
                 img {
                     border-radius: 10px;
-                    max-width: 500px;
-                    display: block;
                 }
             }
             .project-info {
@@ -373,7 +377,7 @@ body {
 
 @include for-big-desktop-up {
     html {
-        font-size: 59.5%;
+        font-size: 57.5%;
         scroll-behavior: smooth;
         background-color: red;
     }
@@ -381,7 +385,7 @@ body {
 
 @include for-normal-desktop-up {
     html {
-        font-size: 59.5%;
+        font-size: 55.5%;
         scroll-behavior: smooth;
         background-color: blue;
     }
@@ -389,7 +393,7 @@ body {
 
 @include for-desktop-up {
     html {
-        font-size: 56.5%;
+        font-size: 53.5%;
         scroll-behavior: smooth;
         background-color: green;
     }

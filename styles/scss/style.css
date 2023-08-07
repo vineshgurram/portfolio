@@ -67,6 +67,11 @@ body {
   max-width: 1536px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .main-heading {
   font-family: "metropolisextra_bold";
   color: #FFFFF0;
@@ -87,11 +92,11 @@ body {
 }
 .header .nav ul {
   list-style: none;
-  font-size: 8rem;
+  font-size: 7.5rem;
   letter-spacing: 1px;
   line-height: 200%;
   text-align: center;
-  padding-block: 7.5%;
+  padding-block: 6.5%;
 }
 .header .nav ul li a {
   text-decoration: none;
@@ -159,7 +164,7 @@ body {
 
 .intro-section {
   height: 100vh;
-  padding-top: 8%;
+  padding-top: 7%;
 }
 .intro-section .left-box {
   display: inline-block;
@@ -170,8 +175,8 @@ body {
 .intro-section .left-box h2 {
   font-family: "metropolisextra_light";
   color: #FFFFF0;
-  font-size: 11rem;
-  line-height: 120%;
+  font-size: 8rem;
+  line-height: 180%;
 }
 .intro-section .left-box h1 {
   font-family: "metropolisextra_bold";
@@ -190,6 +195,7 @@ body {
 .intro-section .right-box .profile-img_block .profile-img {
   width: 30rem;
   border-radius: 100%;
+  margin: 0 auto;
 }
 .intro-section .right-box h2 {
   font-family: "metropolisregular";
@@ -230,12 +236,10 @@ body {
   grid-row-gap: 5rem;
 }
 .project-section .project-wrap .project-box .project-img {
-  min-height: 300px;
+  min-height: 30rem;
 }
 .project-section .project-wrap .project-box .project-img img {
   border-radius: 10px;
-  max-width: 500px;
-  display: block;
 }
 .project-section .project-wrap .project-box .project-info .project-name {
   font-size: 3rem;
@@ -303,21 +307,21 @@ body {
 
 @media (max-width: 1700px) {
   html {
-    font-size: 59.5%;
+    font-size: 57.5%;
     scroll-behavior: smooth;
     background-color: red;
   }
 }
 @media (max-width: 1600px) {
   html {
-    font-size: 59.5%;
+    font-size: 55.5%;
     scroll-behavior: smooth;
     background-color: blue;
   }
 }
 @media (max-width: 1500px) {
   html {
-    font-size: 56.5%;
+    font-size: 53.5%;
     scroll-behavior: smooth;
     background-color: green;
   }
