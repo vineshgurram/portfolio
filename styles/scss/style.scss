@@ -76,6 +76,11 @@ img{
     font-size: 10rem;
     line-height: 130%;
     letter-spacing: 5px;
+
+    @include for-phone-only{
+        font-size: 6rem;
+        letter-spacing: 1px;
+    }
 }
 
 .header {
@@ -90,6 +95,10 @@ img{
         width: 100%;
         background-color: $primary-color;
 
+        @include for-phone-only{
+            transform: translateX(200%);
+        }
+
         ul {
             list-style: none;
             font-size: 7.5rem;
@@ -97,6 +106,11 @@ img{
             line-height: 200%;
             text-align: center;
             padding-block: 6.5%;
+
+            @include for-phone-only{
+                font-size: 5rem;
+                transform: translateY(40%);
+            }
 
             li {
                 a {
@@ -115,6 +129,10 @@ img{
     .nav.active {
         transform: translateY(0%);
         transition: 0.5s ease all;
+
+        @include for-phone-only{
+            transform: translateX(0%);
+        }
     }
 
     .btn-wrap {
@@ -163,6 +181,12 @@ img{
                 border-radius: 10px;
                 background-color: $secondary-color;
 
+                @include for-phone-only{
+                    height: 4px;
+                    margin-bottom: 6px;
+                }
+                
+
                 &:last-child{
                     margin-bottom: 0;
                 }
@@ -200,51 +224,111 @@ img{
 .intro-section {
     height: 100vh;
     padding-top: 7%;
-    .left-box {
-        display: inline-block;
-        width: 65%;
-        margin-right: -4px;
-        vertical-align: middle;
 
-        h2 {
-            font-family: $extra-light;
-            color: $secondary-color;
-            font-size: 8rem;
-            line-height: 180%;
-        }
-
-        h1 {
-            font-family: $extra-bold;
-            color: $secondary-color;
-            font-size: 16rem;
-            line-height: 130%;
-            letter-spacing: 5px;
-            margin: 0;
-        }
+    @include for-laptop-up{
+        padding-top: 10%;
     }
 
-    .right-box {
-        display: inline-block;
-        width: 35%;
-        vertical-align: middle;
-        text-align: center;
+    @include for-phone-only{
+        padding-top: 30%;
+    }
 
-        .profile-img_block {
-            .profile-img {
-                width: 30rem;
-                border-radius: 100%;
-                margin: 0 auto;
+    .intro-box-wrap{
+        @include for-laptop-up{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+
+        @include for-phone-only{
+            gap: 5rem;
+        }
+        
+        .left-box {
+            display: inline-block;
+            width: 65%;
+            margin-right: -4px;
+            vertical-align: middle;
+            
+            @include for-laptop-up{
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+
+            @include for-tablet-landscape-up{
+                font-size: 6rem;
+            }
+    
+            h2 {
+                font-family: $extra-light;
+                color: $secondary-color;
+                font-size: 8rem;
+                line-height: 180%;
+
+                @include for-phone-only{
+                    font-size: 5rem;
+                }
+            }
+    
+            h1 {
+                font-family: $extra-bold;
+                color: $secondary-color;
+                font-size: 16rem;
+                line-height: 130%;
+                letter-spacing: 5px;
+                margin: 0;
+
+                @include for-laptop-up{
+                    font-size: 12rem;
+                }
+
+                @include for-tablet-landscape-up{
+                    font-size: 10rem;
+                }
+
+                @include for-phone-only{
+                    font-size: 8rem;
+                    letter-spacing: 2px;
+                }
             }
         }
+    
+        .right-box {
+            display: inline-block;
+            width: 35%;
+            vertical-align: middle;
+            text-align: center;
 
-        h2 {
-            font-family: $regular;
-            color: $secondary-color;
-            font-size: 3rem;
-            line-height: 130%;
-            letter-spacing: 1px;
+            @include for-laptop-up{
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+    
+            .profile-img_block {
+                .profile-img {
+                    width: 30rem;
+                    border-radius: 100%;
+                    margin: 0 auto;
+
+                    @include for-phone-only{
+                        width: 20rem;
+                    }
+                }
+            }
+    
+            h2 {
+                font-family: $regular;
+                color: $secondary-color;
+                font-size: 3rem;
+                line-height: 130%;
+                letter-spacing: 1px;
+            }
         }
     }
+   
 }
 
 .about-section {
@@ -252,12 +336,20 @@ img{
         font-family: "metropolismedium";
         font-size: 3.5rem;
         line-height: 180%;
+
+        @include for-phone-only{
+            font-size: 2.5rem;
+        }
     }
 
     .about-info {
         p {
             font-size: 2.5rem;
             line-height: 180%;
+
+            @include for-phone-only{
+                font-size: 2rem;
+            }
         }
     }
 
@@ -272,6 +364,10 @@ img{
         background-color: #097969;
         color: $secondary-color;
         transition: 50ms ease all;
+
+        @include for-phone-only{
+            font-size: 2rem;
+        }
 
         i {
             margin-right: 1rem;
@@ -293,11 +389,23 @@ img{
             width: 20%;
             margin-right: -2px;
 
+            @include for-tablet-landscape-up{
+                width: 30%;
+            }
+
+            @include for-phone-only{
+                width: 50%;
+            }
+
             .skills-icon{
 
                 i{
                     font-size: 12rem;
                     line-height: 150%;
+
+                    @include for-phone-only{
+                        font-size: 10rem;
+                    }
                 }
             }
             h3{
@@ -305,7 +413,12 @@ img{
                 line-height: 150%;
                 letter-spacing: 2px;
                 font-family: $extra-light;
+
+                @include for-phone-only{
+                    font-size: 2.5rem;
+                }
             }
+
         }
     
 }
@@ -317,6 +430,14 @@ img{
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 2rem;
         grid-row-gap: 5rem;
+
+        @include for-tablet-landscape-up{
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include for-phone-only{
+            grid-template-columns: 1fr;
+        }
 
         .project-box {
             .project-img {
@@ -358,7 +479,7 @@ img{
     .footer-links {
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content:center;
 
         .social-icon i {
             color: $secondary-color;
@@ -394,12 +515,16 @@ img{
     }
 
     .copyright-txt{
-        text-align: right;
+        text-align:center;
         font-size: 2rem;
         line-height: 200%;
         margin-top: 2rem;
         font-family: $extra-light;
         letter-spacing: 2px;
+
+        @include for-phone-only{
+            font-size: 1.8rem;
+        }
     }
 }
 
@@ -456,11 +581,15 @@ img{
         font-size: 51%;
         scroll-behavior: smooth;
     }
+
+    .container-md{
+        width: 90%;
+    }
 }
 
 @include for-phone-only {
     html {
-        font-size: 55%;
+        font-size: 50%;
         scroll-behavior: smooth;
     }
 }

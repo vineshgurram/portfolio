@@ -79,6 +79,12 @@ img {
   line-height: 130%;
   letter-spacing: 5px;
 }
+@media (max-width: 767px) {
+  .main-heading {
+    font-size: 6rem;
+    letter-spacing: 1px;
+  }
+}
 
 .header .nav {
   transform: translateY(-200%);
@@ -90,6 +96,11 @@ img {
   width: 100%;
   background-color: #0C090A;
 }
+@media (max-width: 767px) {
+  .header .nav {
+    transform: translateX(200%);
+  }
+}
 .header .nav ul {
   list-style: none;
   font-size: 7.5rem;
@@ -97,6 +108,12 @@ img {
   line-height: 200%;
   text-align: center;
   padding-block: 6.5%;
+}
+@media (max-width: 767px) {
+  .header .nav ul {
+    font-size: 5rem;
+    transform: translateY(40%);
+  }
 }
 .header .nav ul li a {
   text-decoration: none;
@@ -109,6 +126,11 @@ img {
 .header .nav.active {
   transform: translateY(0%);
   transition: 0.5s ease all;
+}
+@media (max-width: 767px) {
+  .header .nav.active {
+    transform: translateX(0%);
+  }
 }
 .header .btn-wrap {
   display: inline-block;
@@ -139,6 +161,12 @@ img {
   border-radius: 10px;
   background-color: #FFFFF0;
 }
+@media (max-width: 767px) {
+  .header .btn-wrap .close-btn .btn {
+    height: 4px;
+    margin-bottom: 6px;
+  }
+}
 .header .btn-wrap .close-btn .btn:last-child {
   margin-bottom: 0;
 }
@@ -166,19 +194,59 @@ img {
   height: 100vh;
   padding-top: 7%;
 }
-.intro-section .left-box {
+@media (max-width: 1300px) {
+  .intro-section {
+    padding-top: 10%;
+  }
+}
+@media (max-width: 767px) {
+  .intro-section {
+    padding-top: 30%;
+  }
+}
+@media (max-width: 1300px) {
+  .intro-section .intro-box-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .intro-section .intro-box-wrap {
+    gap: 5rem;
+  }
+}
+.intro-section .intro-box-wrap .left-box {
   display: inline-block;
   width: 65%;
   margin-right: -4px;
   vertical-align: middle;
 }
-.intro-section .left-box h2 {
+@media (max-width: 1300px) {
+  .intro-section .intro-box-wrap .left-box {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 1279px) {
+  .intro-section .intro-box-wrap .left-box {
+    font-size: 6rem;
+  }
+}
+.intro-section .intro-box-wrap .left-box h2 {
   font-family: "metropolisextra_light";
   color: #FFFFF0;
   font-size: 8rem;
   line-height: 180%;
 }
-.intro-section .left-box h1 {
+@media (max-width: 767px) {
+  .intro-section .intro-box-wrap .left-box h2 {
+    font-size: 5rem;
+  }
+}
+.intro-section .intro-box-wrap .left-box h1 {
   font-family: "metropolisextra_bold";
   color: #FFFFF0;
   font-size: 16rem;
@@ -186,18 +254,46 @@ img {
   letter-spacing: 5px;
   margin: 0;
 }
-.intro-section .right-box {
+@media (max-width: 1300px) {
+  .intro-section .intro-box-wrap .left-box h1 {
+    font-size: 12rem;
+  }
+}
+@media (max-width: 1279px) {
+  .intro-section .intro-box-wrap .left-box h1 {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 767px) {
+  .intro-section .intro-box-wrap .left-box h1 {
+    font-size: 8rem;
+    letter-spacing: 2px;
+  }
+}
+.intro-section .intro-box-wrap .right-box {
   display: inline-block;
   width: 35%;
   vertical-align: middle;
   text-align: center;
 }
-.intro-section .right-box .profile-img_block .profile-img {
+@media (max-width: 1300px) {
+  .intro-section .intro-box-wrap .right-box {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+.intro-section .intro-box-wrap .right-box .profile-img_block .profile-img {
   width: 30rem;
   border-radius: 100%;
   margin: 0 auto;
 }
-.intro-section .right-box h2 {
+@media (max-width: 767px) {
+  .intro-section .intro-box-wrap .right-box .profile-img_block .profile-img {
+    width: 20rem;
+  }
+}
+.intro-section .intro-box-wrap .right-box h2 {
   font-family: "metropolisregular";
   color: #FFFFF0;
   font-size: 3rem;
@@ -210,9 +306,19 @@ img {
   font-size: 3.5rem;
   line-height: 180%;
 }
+@media (max-width: 767px) {
+  .about-section h3 {
+    font-size: 2.5rem;
+  }
+}
 .about-section .about-info p {
   font-size: 2.5rem;
   line-height: 180%;
+}
+@media (max-width: 767px) {
+  .about-section .about-info p {
+    font-size: 2rem;
+  }
 }
 .about-section .btn {
   display: inline-block;
@@ -225,6 +331,11 @@ img {
   background-color: #097969;
   color: #FFFFF0;
   transition: 50ms ease all;
+}
+@media (max-width: 767px) {
+  .about-section .btn {
+    font-size: 2rem;
+  }
 }
 .about-section .btn i {
   margin-right: 1rem;
@@ -241,9 +352,24 @@ img {
   width: 20%;
   margin-right: -2px;
 }
+@media (max-width: 1279px) {
+  .skills-section .skills-icon-wrap .skills-icon-box {
+    width: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .skills-section .skills-icon-wrap .skills-icon-box {
+    width: 50%;
+  }
+}
 .skills-section .skills-icon-wrap .skills-icon-box .skills-icon i {
   font-size: 12rem;
   line-height: 150%;
+}
+@media (max-width: 767px) {
+  .skills-section .skills-icon-wrap .skills-icon-box .skills-icon i {
+    font-size: 10rem;
+  }
 }
 .skills-section .skills-icon-wrap .skills-icon-box h3 {
   font-size: 3rem;
@@ -251,12 +377,27 @@ img {
   letter-spacing: 2px;
   font-family: "metropolisextra_light";
 }
+@media (max-width: 767px) {
+  .skills-section .skills-icon-wrap .skills-icon-box h3 {
+    font-size: 2.5rem;
+  }
+}
 
 .project-section .project-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
   grid-row-gap: 5rem;
+}
+@media (max-width: 1279px) {
+  .project-section .project-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .project-section .project-wrap {
+    grid-template-columns: 1fr;
+  }
 }
 .project-section .project-wrap .project-box .project-img {
   min-height: 30rem;
@@ -290,7 +431,7 @@ img {
 .footer .footer-links {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 .footer .footer-links .social-icon i {
   color: #FFFFF0;
@@ -317,12 +458,17 @@ img {
   transition: 0.5s ease;
 }
 .footer .copyright-txt {
-  text-align: right;
+  text-align: center;
   font-size: 2rem;
   line-height: 200%;
   margin-top: 2rem;
   font-family: "metropolisextra_light";
   letter-spacing: 2px;
+}
+@media (max-width: 767px) {
+  .footer .copyright-txt {
+    font-size: 1.8rem;
+  }
 }
 
 .social-side-nav {
@@ -369,10 +515,13 @@ img {
     font-size: 51%;
     scroll-behavior: smooth;
   }
+  .container-md {
+    width: 90%;
+  }
 }
 @media (max-width: 767px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
     scroll-behavior: smooth;
   }
 }/*# sourceMappingURL=style.css.map */
