@@ -3,13 +3,7 @@ $(".close-btn").click(function () {
   $(".nav").toggleClass("active");
 });
 
-
-let introSectionImgContent = {
-  imgPath : "images/gmail.png",
-  imgAlt : "This is an Images.",
-}
-
-
-let introSectionImgTemplate = `<img src="${introSectionImgContent.imgPath}" alt="${introSectionImgContent.imgAlt}">`;
-
-document.querySelector(".about-section")
+$(".nav li").click(function () {
+  $(".nav").removeClass("active");
+  $(".close-btn").toggleClass("active");
+});

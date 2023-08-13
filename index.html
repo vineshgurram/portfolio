@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A Personal Portfolio Website">
+    <meta name="keywords" content="HTML,SASS,Javascript">
+    <meta name="author" content="Vinesh Gurram">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/scss/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -36,7 +39,7 @@
     <!-- Main -->
     <main>
         <!-- Introduction section  -->
-        <section class="intro-section mb-100 " id="">
+        <section class="intro-section pt-100 " id="intro-section">
             <div class="container-md">
                 <div class="intro-box-wrap">
                     <div class="left-box">
@@ -53,7 +56,7 @@
             </div>
         </section>
         <!-- About Section -->
-        <section class="about-section mb-100" id="about-section">
+        <section class="about-section pt-100" id="about-section">
             <div class="container-md">
                 <h2 class="main-heading mb-50">About Me</h2>
                 <h3 class="mb-25">I am Front-end Developer</h3>
@@ -66,70 +69,23 @@
                         libero? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, eligendi!
                     </p>
                 </div>
-                <a href="https://drive.google.com/file/d/15mCdlysXUW5DbPS2-iGVQW6OLweBihv9/view?usp=drive_link" class="btn" target="_blank">
+                <a href="https://drive.google.com/file/d/15mCdlysXUW5DbPS2-iGVQW6OLweBihv9/view?usp=drive_link"
+                    class="btn" target="_blank">
                     <i class="fa-solid fa-circle-down"></i>
                     Download Resume
                 </a>
             </div>
         </section>
         <!-- Skills Section -->
-        <section class="skills-section mb-100" id="skills-section">
+        <section class="skills-section pt-100" id="skills-section">
             <div class="container-md">
                 <h2 class="main-heading mb-50">Skills</h2>
                 <div class="skills-icon-wrap">
-                    <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-brands fa-html5"></i>
-                        </div>
-                        <h3>HTML</h3>
-                    </div>
-                    <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-brands fa-css3-alt"></i>
-                        </div>
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-brands fa-sass"></i>
-                        </div>
-                        <h3>SASS</h3>
-                    </div>
-                    <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-brands fa-wordpress"></i>
-                        </div>
-                        <h3>Wordpress</h3>
-                    </div>
-                    <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-brands fa-bootstrap"></i>
-                        </div>
-                        <h3>Bootstrap</h3>
-                    </div>
-                    <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-brands fa-js"></i>
-                        </div>
-                        <h3>Javascript</h3>
-                    </div>
-                    <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-brands fa-python"></i>
-                        </div>
-                        <h3>Python</h3>
-                    </div>
-                    <!-- <div class="skills-icon-box mb-50">
-                        <div class="skills-icon">
-                            <i class="fa-solid fa-c"></i>
-                        </div>
-                        <h3>C</h3>
-                    </div> -->
                 </div>
             </div>
         </section>
         <!-- Project Section -->
-        <section class="project-section mb-100" id="project-section">
+        <section class="project-section pt-100 mb-100" id="project-section">
             <div class="container-md">
                 <h2 class="main-heading mb-50">Projects</h2>
                 <div class="project-wrap">
@@ -216,9 +172,10 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer pt-100 pb-50">
         <div class="container-md">
-            <div class="footer-links">
+            <h2 class="main-heading mb-50">Get In Contact <i class="fa-solid fa-angles-down fa-beat-fade"></i></h2>
+            <div class="footer-links mb-50">
                 <div class="social-icon">
                     <a href="https://in.linkedin.com/in/vinesh-gurram" target="_blank"><i
                             class="fa-brands fa-linkedin"></i></a>
@@ -242,6 +199,8 @@
     <script src="scripts/jquery-3.7.0.js"></script>
     <!-- <script src="https://kit.fontawesome.com/d0b2f8abfe.js" crossorigin="anonymous"></script> -->
     <script src="scripts/common.js"></script>
+    <script src="scripts/skills.js"></script>
+    <script src="scripts/projects.js"></script>
 </body>
 
 </html>
