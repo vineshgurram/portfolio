@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/31/05/05/background-618226_960_720.png");
+}
+#title,#description{
+    text-align: center;
+}
+#survey-form{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgba(245, 225, 225, 0.753);
+    color: black;
+    width: 80%;
+    padding: 50px;
+    margin: auto;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="file"],textarea,select{
+    display: inline-block;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: greenyellow;
+    border:none;
+    margin: 10px 0;
+    font-weight: bolder;
+}
+input[type="checkbox"]{
+    width: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+button:hover{
+    background-color: green;
+    color: aliceblue;
+}
+textarea,input{
+    font-family: 'Ubuntu', sans-serif;
+}
+.space{
+    margin-top: 20px;
+}

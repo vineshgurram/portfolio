@@ -1,17 +1,19 @@
-// let projectContent = [
-//     {
-//         projectId: 1,
-//         projectImg: '<i class="fa-brands fa-html5"></i>',
-//         projectImgAlternateText:'hii images is here',
-//         projectName:'',
-//         projectTec: 'HTML',
-//     }
-// ];
+let projectContent = [
+    {
+        projectId: 1,
+        projectImg: 'images/pro-thumb-1.jpg',
+        projectImgAlternateText:'hii images is here',
+        projectName:'Project Name',
+        projectTec: ["html","css","hello"],
+    }
+];
 
+console.log()
 
-// let projectBoxTemplate = "";
-// for (let i = 0; i < skillContent.length; i++) {
-//     projectBoxTemplate += '<div class="project-box"><div class="project-img mb-25"><img src='+ projectContent[i].projectImg + ' alt='+ projectContent[i].projectImgAlternateText +'></div><div class="project-info"><h4 class="project-name mb-25">' +  projectContent[i].projectName + '</h4><div class="techology-name"><button>Wordpress</button><button>SASS</button><button>Jquery</button></div></div></div>';
-// }
+let projectBoxTemplate = "";
+for (let i = 0; i < skillContent.length; i++) {
+    projectBoxTemplate = '<div class="project-box"><div class="project-img mb-25"><img src=' + projectContent[0].projectImg + ' alt= "'+ projectContent[0].projectImgAlternateText +'"></div><div class="project-info"><h4 class="project-name mb-25">' +  projectContent[0].projectName + '</h4></div>';
+}
+console.log(projectBoxTemplate);
 
-// document.querySelector(".project-wrap").innerHTML = projectBoxTemplate;
+document.querySelector(".project-wrap").innerHTML = projectBoxTemplate;

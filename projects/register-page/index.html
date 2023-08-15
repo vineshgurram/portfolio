@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Application</title>
+</head>
+
+<body>
+    <h1 id="title">Job Application Form</h1>
+    <p id="description">Note: Please fill all your details carefully.</p>
+    <form action="" id="survey-form">
+        <div>
+            <label for="form" id="name-label">
+                Name <input type="text" id="name" placeholder="Enter Your Name" required>
+            </label>
+            <label for="email" id="email-label">
+                Email-ID <input type="email" id="email" placeholder="Enter Your Email Address" required>
+            </label>
+            <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+            <label for="qualification"></label>
+            Qualification <select name="qualification" id="dropdown">
+                <option value="blank">---Select from the list---</option>
+                <option value="tenth">10th Pass</option>
+                <option value="tenth">Diploma</option>
+                <option value="twelweth">12th Pass</option>
+                <option value="bachelors">Bachelors</option>
+                <option value="masters">Masters</option>
+                <option value="Phd"></option>
+            </select>
+        </div>
+        <div>
+            <label for="interest" id="interest">
+                Field of Interest
+                <div class="1st-input"><input type="checkbox" checked name="front-end" id="front-end" value="front-end">Front-End Develpment</div>
+                <div><input type="checkbox" name="back-end" id="back-end" value="back-end">Back-End Develpment</div>
+                <div><input type="checkbox" name="full-stack" id="full-stack" value="full-stack">Full-Stack Development</div>
+                <div> <input type="checkbox" name="software-dev" id="software-dev" value="software-dev">Software Development</div>
+                <div><input type="checkbox" name="testing" id="testing" value="testing">Testing</div>
+            </label>
+        </div>
+        <div class="space">
+            <label for="">
+                Upload Your Updated CV
+                <input type="file" name="attachment" id="attachment">
+            </label>
+            <label for="">
+                Cover Letter : <textarea name="cover" id="cover" cols="30" rows="10"
+                    placeholder="Write here something...."></textarea>
+            </label>
+            <p>How did you hear about us?</p>
+            <label for=""><input type="radio" name="referrer" id="" value="linkedin" checked>Linkedin</label>
+            <label for=""></label><input type="radio" name="referrer" id="" value="indeed">Indeed</label>
+            <label for=""></label><input type="radio" name="referrer" id="" value="naukri">Naukri</label>
+            <label for=""></label><input type="radio" name="referrer" id="" value="other">Other</label>
+        </div>
+        <div>
+            <button type="submit" id="submit">Submit Form</button>
+        </div>
+    </form>
+</body>
+
+</html>
