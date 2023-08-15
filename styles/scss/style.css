@@ -14,6 +14,7 @@ html {
 
 body {
   background: #2980b9;
+  background: -webkit-linear-gradient(to right, #2c3e50, #2980b9);
   background: linear-gradient(to right, #2c3e50, #2980b9);
   font-family: "metropolisregular";
   color: #FFFFF0;
@@ -137,7 +138,6 @@ img {
 }
 .header .btn-wrap {
   display: inline-block;
-  width: -moz-max-content;
   width: max-content;
   text-align: right;
   position: relative;
@@ -530,4 +530,6 @@ img {
     font-size: 50%;
     scroll-behavior: smooth;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
