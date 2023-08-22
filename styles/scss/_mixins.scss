@@ -58,6 +58,8 @@
 // 1601px
 
 
+// For Keyframes
+
 @mixin for-inline-block{
     display: inline-block;
     width: 50%;
@@ -66,4 +68,14 @@
 @mixin for-flex{
     display: flex;
     align-items: center;
+}
+
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
 }
