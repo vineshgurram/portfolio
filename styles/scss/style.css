@@ -331,7 +331,7 @@ img {
 }
 .about-section .about-info p {
   font-size: 2.5rem;
-  line-height: 180%;
+  line-height: 160%;
 }
 @media (max-width: 767px) {
   .about-section .about-info p {
@@ -431,7 +431,7 @@ img {
 .project-section .project-wrap .project-box .project-info a .project-name {
   font-size: 3rem;
   line-height: 150%;
-  letter-spacing: 2px;
+  letter-spacing: normal;
 }
 .project-section .project-wrap .project-box .project-info .techology-name {
   display: flex;
