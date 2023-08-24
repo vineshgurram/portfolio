@@ -289,7 +289,7 @@ img {
 }
 @media (max-width: 767px) {
   .intro-section .intro-box-wrap .left-box h1 {
-    font-size: 13rem;
+    font-size: 10rem;
   }
 }
 .intro-section .intro-box-wrap .right-box {
@@ -460,6 +460,14 @@ img {
 .footer {
   background-color: #26282A;
 }
+.footer .main-heading br {
+  display: none;
+}
+@media (max-width: 767px) {
+  .footer .main-heading br {
+    display: block;
+  }
+}
 .footer .footer-links {
   display: flex;
   align-items: center;
@@ -503,17 +511,6 @@ img {
     padding-top: 2rem;
     border-top: 1px solid #FFFFF0;
   }
-}
-
-.social-side-nav {
-  position: fixed;
-  left: 0;
-  top: 50%;
-}
-.social-side-nav .side-icon img {
-  display: block;
-  width: 5rem;
-  margin-bottom: 1rem;
 }
 
 @media (max-width: 1700px) {
