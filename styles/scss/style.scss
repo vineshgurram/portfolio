@@ -53,6 +53,10 @@ body {
     margin-bottom: 2.5rem;
 }
 
+.mb-10{
+    margin-bottom: 1rem;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -325,7 +329,7 @@ img {
                 }
 
                 @include for-phone-only {
-                    font-size: 10rem;
+                    font-size: 13rem;
                 }
             }
         }
@@ -478,7 +482,12 @@ img {
                 }
             }
             .project-info {
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                flex-direction: column;
                 a {
+                    display: block;
                     text-decoration: none;
                     color: $secondary-color;
                     .project-name {
@@ -565,7 +574,7 @@ img {
             font-size: 1.8rem;
             padding-top: 2rem;
             border-top: 1px solid $secondary-color;
-            text-align: center;
+            // text-align: center;
         }
     }
 }

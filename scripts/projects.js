@@ -19,35 +19,32 @@ let projectContent = [
         projectId: 3,
         projectImg: 'images/pro-thumb-1.jpg',
         projectImgAlternateText:'hii images is here',
-        projectName:'Rock Paper Scissors Game',
-        projectTec: ["HTML", "CSS","JavaScript"],
-        projectLink:'https://developers.google.com/search/docs/crawling-indexing/special-tags'
-    }
-    ,
+        projectName:'Random Hex Code Generator',
+        projectTec: ["HTML", "CSS","JavaScript",],
+        projectLink:'projects/random-hexcode-generator/index.html'
+    },
     {
         projectId: 4,
         projectImg: 'images/pro-thumb-1.jpg',
         projectImgAlternateText:'hii images is here',
-        projectName:'To do List',
+        projectName:'Random Quote Generator',
         projectTec: ["HTML", "CSS","JavaScript"],
-        projectLink:'https://developers.google.com/search/docs/crawling-indexing/special-tags'
-    }
-    ,
+        projectLink:'projects/random-quotes-generator/index.html'
+    },
     {
         projectId: 5,
         projectImg: 'images/pro-thumb-1.jpg',
         projectImgAlternateText:'hii images is here',
-        projectName:'Counter App',
+        projectName:'Rock Paper Scissors Game',
         projectTec: ["HTML", "CSS","JavaScript"],
         projectLink:'https://developers.google.com/search/docs/crawling-indexing/special-tags'
-    }
-    ,
+    },
     {
         projectId: 6,
         projectImg: 'images/pro-thumb-1.jpg',
         projectImgAlternateText:'hii images is here',
-        projectName:'Calculator',
-        projectTec: ["HTML", "CSS","JavaScript",],
+        projectName:'CRUD Operations',
+        projectTec: ["HTML", "CSS","JavaScript","Bootstrap"],
         projectLink:'https://developers.google.com/search/docs/crawling-indexing/special-tags'
     }
 ];
