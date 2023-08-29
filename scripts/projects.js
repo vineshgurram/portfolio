@@ -2,15 +2,15 @@ let projectContent = [
     {
         projectId: 1,
         projectImg: 'images/pro-thumb-1.jpg',
-        projectImgAlternateText:'hii images is here',
+        projectImgAlternateText:'Thumbnail image for Simple Registration Page',
         projectName:'Simple Registration Page',
         projectTec: ["HTML","CSS"],
         projectLink:'projects/register-page/index.html'
     },
     {
         projectId: 2,
-        projectImg: 'images/pro-thumb-1.jpg',
-        projectImgAlternateText:'hii images is here',
+        projectImg: 'images/pro-thumb-2.jpg',
+        projectImgAlternateText:'Thumbnail image for Tribute Page',
         projectName:'Tribute Page',
         projectTec: ["HTML","CSS"],
         projectLink:'projects/tribute-page/index.html'
@@ -25,7 +25,7 @@ let projectContent = [
     },
     {
         projectId: 4,
-        projectImg: 'images/pro-thumb-1.jpg',
+        projectImg: 'images/pro-thumb-2.jpg',
         projectImgAlternateText:'hii images is here',
         projectName:'Random Quote Generator',
         projectTec: ["HTML", "CSS","JavaScript"],
@@ -41,7 +41,7 @@ let projectContent = [
     },
     {
         projectId: 6,
-        projectImg: 'images/pro-thumb-1.jpg',
+        projectImg: 'images/pro-thumb-2.jpg',
         projectImgAlternateText:'hii images is here',
         projectName:'CRUD Operations',
         projectTec: ["HTML", "CSS","JavaScript","Bootstrap"],
