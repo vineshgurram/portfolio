@@ -2,6 +2,8 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url("https://cdn.pixabay.com/photo/2015/01/31/05/05/background-618226_960_720.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #title,#description{
     text-align: center;
@@ -15,6 +17,7 @@ body{
     margin: auto;
     border-radius: 5px;
     opacity: 0.8;
+    max-width: 900px;
 }
 input[type="text"],input[type="email"],input[type="number"],input[type="file"],textarea,select{
     display: inline-block;
@@ -24,7 +27,7 @@ input[type="text"],input[type="email"],input[type="number"],input[type="file"],t
     box-sizing: border-box;
 }
 button{
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     background-color: greenyellow;
     border:none;
@@ -46,3 +49,5 @@ textarea,input{
 .space{
     margin-top: 20px;
 }
+
+.space + div{text-align: center;}
