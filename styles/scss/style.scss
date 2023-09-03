@@ -2,6 +2,7 @@
 @import "mixins";
 @import url(../css/normalize.css);
 @import url(../css/font.css);
+@import url(../css/locomotive-scroll.css);
 
 * {
     margin: 0;
@@ -25,23 +26,89 @@ body {
     background: #b92b27; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1565c0, #c12e29);
     background: linear-gradient(to right, #156bcd, #c12e29);
+
+    @include for-phone-only {
+        background: rgb(21, 107, 205);
+        background: -moz-radial-gradient(circle, rgba(21, 107, 205, 1) 0%, rgba(193, 46, 41, 1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(21, 107, 205, 1) 0%, rgba(193, 46, 41, 1) 100%);
+        background: radial-gradient(circle, rgba(21, 107, 205, 1) 0%, rgba(193, 46, 41, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#156bcd",endColorstr="#c12e29",GradientType=1);
+    }
+}
+
+// FOR FIREFOX BROWSERS
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #202040 transparent;
+    background-color: #f5f5f5;
+}
+
+html:-webkit-scrollbar {
+    width: 10px;
+}
+
+html:-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html:-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    border: 3px solid transparent;
+}
+
+// FOR OTHER BROWSERS I.E WEBKIT
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    background-color: #f5f5f5;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #202040;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #3a3a50;
+}
+
+::selection {
+    color: $slate-color;
+    background-color: $secondary-color;
+}
+
+::-moz-selection {
+    color: $slate-color;
+    background-color: $secondary-color;
+}
+
+.c-scrollbar_thumb {
+    background-color: $secondary-color;
 }
 
 .pt-100 {
     padding-top: 10rem;
 }
+
 .pb-100 {
     padding-bottom: 10rem;
 }
+
 .pt-50 {
     padding-top: 5rem;
 }
+
 .pb-50 {
     padding-bottom: 5rem;
 }
+
 .mt-100 {
     margin-top: 10rem;
 }
+
 .mb-100 {
     margin-bottom: 10rem;
 }
@@ -71,6 +138,10 @@ body {
     width: 80%;
     margin: 0 auto;
     max-width: 1536px;
+
+    @include for-phone-only {
+        padding: 0 2.5rem;
+    }
 }
 
 img {
@@ -95,6 +166,7 @@ img {
     }
 }
 
+// HEADER SECTION
 .header {
     // padding: 2rem 0;
     .nav {
@@ -175,11 +247,13 @@ img {
             position: relative;
             height: 50px;
 
-            &:hover{
-              .btn{
-                background-color: #C8FFE0;
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-              }
+            &:hover {
+                .btn {
+                    background-color: #c8ffe0;
+                    box-shadow:
+                        rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                }
             }
 
             // &::after {
@@ -228,8 +302,6 @@ img {
                 border-radius: 10px;
                 background-color: $secondary-color;
 
-              
-
                 @include for-phone-only {
                     height: 4px;
                     margin-bottom: 6px;
@@ -269,9 +341,9 @@ img {
     }
 }
 
+// INTRODUCTION SECTION 
 .intro-section {
-    height: 100vh;
-    padding-top: 7%;
+    // padding-top: 7%;
 
     @include for-laptop-up {
         padding-top: 0%;
@@ -282,12 +354,16 @@ img {
     }
 
     .intro-box-wrap {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 65% 35%;
+        align-items: center;
+
         @include for-laptop-up {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column-reverse;
-            height: 100vh;
         }
 
         @include for-phone-only {
@@ -295,14 +371,18 @@ img {
         }
 
         .left-box {
-            display: inline-block;
-            width: 65%;
-            margin-right: -4px;
-            vertical-align: middle;
+            // display: inline-block;
+            // width: 65%;
+            // margin-right: -4px;
+            // vertical-align: middle;
 
             @include for-laptop-up {
                 width: 100%;
                 display: block;
+                text-align: left;
+            }
+
+            @include for-laptop-up {
                 text-align: center;
             }
 
@@ -349,10 +429,10 @@ img {
         }
 
         .right-box {
-            display: inline-block;
-            width: 35%;
-            vertical-align: middle;
-            text-align: center;
+            // display: inline-block;
+            // width: 35%;
+            // vertical-align: middle;
+            // text-align: center;
 
             @include for-laptop-up {
                 width: 100%;
@@ -362,9 +442,13 @@ img {
 
             .profile-img_block {
                 .profile-img {
-                    width: 30rem;
+                    width: 60%;
                     border-radius: 100%;
                     margin: 0 auto;
+
+                    @include for-laptop-up {
+                        width: 20rem;
+                    }
 
                     @include for-phone-only {
                         width: 20rem;
@@ -378,11 +462,13 @@ img {
                 font-size: 3rem;
                 line-height: 130%;
                 letter-spacing: 1px;
+                text-align: center;
             }
         }
     }
 }
 
+// ABOUT SECTION 
 .about-section {
     h3 {
         font-family: "metropolismedium";
@@ -396,7 +482,7 @@ img {
 
     .about-info {
         p {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             line-height: 160%;
 
             @include for-phone-only {
@@ -430,9 +516,11 @@ img {
     }
 }
 
+// SKILL SECTION 
 .skills-section {
     .skills-icon-wrap {
         text-align: center;
+
 
         .skills-icon-box {
             display: inline-block;
@@ -501,6 +589,7 @@ img {
     }
 }
 
+// PROJECT SECTION
 .project-section {
     .project-wrap {
         display: grid;
@@ -517,10 +606,13 @@ img {
             grid-template-columns: 1fr;
         }
 
+        @include for-mini-phone-only{
+            padding: 0;
+        }
+
         .project-box {
             .project-img {
                 min-height: 30rem;
-
 
                 img {
                     border-radius: 10px;
@@ -561,6 +653,7 @@ img {
     }
 }
 
+// FOOTER SECTION
 .footer {
     background-color: $slate-color;
     // padding: 4.5rem 0;
@@ -637,95 +730,120 @@ img {
     }
 }
 
-@include for-big-desktop-up {
-    html {
-        font-size: 57.5%;
-        scroll-behavior: smooth;
-        background-color: red;
+// CONTACT FORM 
+.contact-form {
+    width: 250px;
+    margin: 0 auto;
+    color: $primary-color;
+    background-color: $secondary-color;
+    padding: 3rem;
+    padding-top: 5rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 30%;
+    left: 40px;
+    transform: translateX(-150%);
+    transition: 1s ease all;
+
+    @include for-phone-only {
+        width: 80%;
+    }
+
+    &.active {
+        transform: translateX(0%);
+    }
+
+    .close-btn{
+        font-size: 2.2rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        color: #c12e29;
+
+        &:hover{
+            color: #d61d16;
+        }
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 1px;
+        font-family: $bold;
+    }
+
+    .SortableItem {
+        label {
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            border: 1px solid $slate-color;
+            border-radius: 2px;
+
+            &::placeholder {
+                color: $slate-color;
+            }
+
+            &:focus {
+                border: 1px solid $blueish-color;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            border: 1px solid $slate-color;
+            border-radius: 2px;
+            resize: none;
+
+            &::placeholder {
+                color: $slate-color;
+            }
+
+            &:focus {
+                border-radius: 2px;
+            }
+        }
+    }
+
+    .btn-toolbar {
+        input {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            padding: 1rem 1.5rem;
+            outline: none;
+            border: none;
+            background-color: $blueish-color;
+            color: $secondary-color;
+            border-radius: 5px;
+            font-family: $extra-bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #175291;
+            }
+        }
     }
 }
 
-@include for-normal-desktop-up {
-    html {
-        font-size: 55.5%;
-        scroll-behavior: smooth;
-        background-color: blue;
-    }
-}
-
-@include for-desktop-up {
-    html {
-        font-size: 53.5%;
-        scroll-behavior: smooth;
-        background-color: green;
-    }
-}
-
-@include for-laptop-up {
-    html {
-        font-size: 55.5%;
-        scroll-behavior: smooth;
-        background-color: yellow;
-    }
-}
-
-@include for-tablet-portrait-up {
-}
-
-@include for-tablet-landscape-up {
-    html {
-        font-size: 51%;
-        scroll-behavior: smooth;
-    }
-
-    .container-md {
-        width: 90%;
-    }
-}
-
-@include for-phone-only {
-    html {
-        font-size: 50%;
-        scroll-behavior: smooth;
-    }
-}
-
-@include keyframes(fade) {
-    0% {
-        background: linear-gradient(to right, #156bcd, #c12e29);
-    }
-    50% {
-        background: linear-gradient(to right, #246bbc, #c84e49);
-    }
-    100% {
-        background: linear-gradient(to right, #156bcd, #c12e29);
-    }
-}
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #f5f5f5;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    background-color: #f5f5f5;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #202040;
-    // border: 2px solid #555555;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #3a3a50;
-    // border: 2px solid #555555;
-}
-
+// LEFT CONTACT BOX
 .left-contact-box {
     position: fixed;
     left: 0;
     top: 40%;
-    background-image: linear-gradient(to right top, #a459d1, #ce61bd, #e773ad, #f38aa4, #f7a4a4);
+    background: #c9d6ff;
+    background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -774,7 +892,6 @@ img {
                     font-family: $bold;
                     line-height: 1.5;
                     z-index: 0;
-                    
                 }
 
                 i {
@@ -783,5 +900,94 @@ img {
                 }
             }
         }
+    }
+    #get-form {
+        writing-mode: vertical-rl;
+        display: block;
+        font-size: 2rem;
+        font-family: $extra-bold;
+        transform: rotate(180deg);
+        padding: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+
+        i {
+            transform: rotate(90deg);
+            display: inline-block;
+            writing-mode: vertical-rl;
+            margin-bottom: 3px;
+        }
+    }
+}
+
+@include for-big-desktop-up {
+    html {
+        font-size: 57.5%;
+        scroll-behavior: smooth;
+        // background-color: red;
+    }
+}
+
+@include for-normal-desktop-up {
+    html {
+        font-size: 55.5%;
+        scroll-behavior: smooth;
+        // background-color: blue;
+    }
+}
+
+@include for-desktop-up {
+    html {
+        font-size: 53.5%;
+        scroll-behavior: smooth;
+        // background-color: green;
+    }
+}
+
+@include for-laptop-up {
+    html {
+        font-size: 55.5%;
+        scroll-behavior: smooth;
+        // background-color: yellow;
+    }
+}
+
+@include for-tablet-portrait-up {
+}
+
+@include for-tablet-landscape-up {
+    html {
+        font-size: 51%;
+        scroll-behavior: smooth;
+    }
+
+    .container-md {
+        width: 90%;
+    }
+}
+
+@include for-phone-only {
+    html {
+        font-size: 50%;
+        scroll-behavior: smooth;
+    }
+}
+
+@include for-mini-phone-only {
+    html {
+        font-size: 40%;
+        scroll-behavior: smooth;
+    }
+}
+
+@include keyframes(fade) {
+    0% {
+        background: linear-gradient(to right, #156bcd, #c12e29);
+    }
+    50% {
+        background: linear-gradient(to right, #246bbc, #c84e49);
+    }
+    100% {
+        background: linear-gradient(to right, #156bcd, #c12e29);
     }
 }

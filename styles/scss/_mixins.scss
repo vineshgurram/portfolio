@@ -8,6 +8,12 @@
     display: grid;
 }
 
+@mixin for-mini-phone-only {
+    @media (max-width: 400px) {
+        @content;
+    }
+}
+
 @mixin for-phone-only {
     @media (max-width: 767px) {
         @content;
