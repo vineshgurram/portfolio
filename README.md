@@ -1,4 +1,4 @@
-# Vinesh Gurram Portfolio Website
+# Portfolio Website
 
 Hi, I'm Vinesh Gurram! 👋, a passionate Front-End Developer dedicated to creating meaningful UI projects.
 
