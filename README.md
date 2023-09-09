@@ -4,7 +4,7 @@ Hi, I'm Vinesh Gurram! 👋, a passionate Front-End Developer dedicated to creat
 
 ## About Me
 
-I'm a Navi Mumbai based Front-End Developer with 1 Years of experience in Web Developer. I love Javascript enjoy collaborating on innovative projects.
+I'm Navi Mumbai based Front-End Developer with 1 Years of experience in Web Development. I love Javascript enjoy collaborating on innovative projects.
 
 As a developer, I enjoy challenges that evolve into learning experiences. I'm always learning new things in the world of coding, staying up to date with the latest techniques.
 
