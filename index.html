@@ -103,6 +103,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- About Section -->
             <section class="about-section pt-100" id="about-section" data-scroll-section data-scroll-speed="2">
                 <div class="container-md">
@@ -146,7 +147,19 @@
             <section class="project-section pt-100 mb-100" id="project-section" data-scroll-section
                 data-scroll-speed="4">
                 <div class="container-md">
-                    <h2 class="main-heading mb-50">Projects</h2>
+                    <h2 class="main-heading mb-25" data-scroll>Projects</h2>
+                    <div class="sort-project mb-25" data-scroll>
+                        <button>Sort By : <span>Old Projects</span>
+                            <ul>
+                                <li>
+                                    <a href="javascript::" onclick="oldProject()">Old Projects</a>
+                                </li>
+                                <li>
+                                    <a href="javascript::" onclick="latestProject()">New Projects</a>
+                                </li>
+                            </ul>
+                        </button>
+                    </div>
                     <div class="project-wrap" data-scroll="" data-scroll-speed="2">
                     </div>
                 </div>

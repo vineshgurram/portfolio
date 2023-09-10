@@ -591,6 +591,49 @@ img {
 
 // PROJECT SECTION
 .project-section {
+    .sort-project{
+        text-align: right;
+
+        button{
+            padding: 1rem 2rem;
+            font-size: 1.8rem;
+            line-height: 150%;
+            border: none;
+            font-family: $bold;
+            background-color: $secondary-color;
+            // border: 2px solid $blueish-color;
+            border-radius: 5px;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        ul{
+            list-style: none;
+            position: absolute;
+            top: 103%;
+            right: 0;
+            width: 80%;
+            background-color: $secondary-color;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: none;
+
+            &.active{
+                display: block;
+            }
+
+            li{
+                a{
+                    display: block;
+                    text-align:center;
+                    padding: 1rem 2rem;
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
     .project-wrap {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -732,7 +775,7 @@ img {
 
 // CONTACT FORM 
 .contact-form {
-    width: 250px;
+    width: 20%;
     margin: 0 auto;
     color: $primary-color;
     background-color: $secondary-color;
@@ -744,6 +787,10 @@ img {
     left: 40px;
     transform: translateX(-150%);
     transition: 1s ease all;
+
+    @include for-desktop-up{
+        width: 250px;
+    }
 
     @include for-phone-only {
         width: 80%;
@@ -920,6 +967,68 @@ img {
     }
 }
 
+.error-page{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    h1{
+        font-size: 15rem;
+        line-height: 150%;
+        font-family: $medium;
+        letter-spacing: 2px;
+        animation-name: fade;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        animation-iteration-count: infinite;
+        margin: 0;
+        text-shadow: -2px -2px 4px $slate-color, 
+      3px 3px 5px $primary-color;
+
+        @include for-tablet-landscape-up {
+            font-size: 10rem;
+        }
+    }
+
+    h2{
+        letter-spacing: normal;
+        line-height: 158%;
+
+        @include for-tablet-landscape-up {
+            font-size: 8rem;
+        }
+
+        @include for-phone-only{
+            font-size: 4rem;
+        }
+    }
+
+    p{
+        font-size: 3rem;
+        line-height: 200%;
+        letter-spacing: 2px;
+
+        @include for-phone-only{
+            font-size: 3rem;
+        }
+        
+        a{
+            color: $primary-color;
+            text-decoration: none;
+            font-family: $extra-light;
+
+            &:hover{
+                text-decoration: line-through;
+                transition: 1s ease all;
+            }
+        }
+    }
+}
+
 @include for-big-desktop-up {
     html {
         font-size: 57.5%;
@@ -982,12 +1091,15 @@ img {
 
 @include keyframes(fade) {
     0% {
-        background: linear-gradient(to right, #156bcd, #c12e29);
+        opacity: 1;
+        transform: translateY(-10px);
     }
     50% {
-        background: linear-gradient(to right, #246bbc, #c84e49);
+        opacity: 0.6;
+        transform: translateY(-1px);
     }
     100% {
-        background: linear-gradient(to right, #156bcd, #c12e29);
+        opacity: 1;
+        transform: translateY(-10px);
     }
 }
