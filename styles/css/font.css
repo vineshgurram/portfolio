@@ -45,6 +45,7 @@
          url('../../fonts/Metropolis-Medium/metropolis-medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -53,6 +54,7 @@
          url('../../fonts/Metropolis-Regular/metropolis-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -61,4 +63,5 @@
          url('../../fonts/Metropolis-SemiBold/metropolis-semibold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
