@@ -18,7 +18,7 @@
     <meta name="twitter:title" content="Vinesh Gurram | Front-End Web Developer">
     <meta name="twitter:description" content="A portfolio of Vinesh Gurram, Front-end Web Developer.">
     <meta name="twitter:image" content="images/meta-thumbnail.jpg">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="This is portfolio website of Vinesh Gurram a Front end Developer.">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/x-icon" href="images/boy.png">
@@ -35,7 +35,10 @@
 </head>
 
 <body>
-
+    <div id="loader">
+        <div class="img"></div>
+        <p>Please Wait ...</p>
+    </div>
     <!-- Header  -->
     <header class="header" data-scroll-section>
         <nav class="nav">
@@ -94,7 +97,8 @@
                         <div class="right-box" data-scroll data-scroll-position="top" data-scroll-direction="horizontal"
                             data-scroll-speed="-4">
                             <div class="profile-img_block mb-50" data-scroll>
-                                <img src="images/avatar-img.jpeg" alt="" class="profile-img">
+                                <img src="images/avatar-img.webp" alt="Profile Image of Vinesh Gurram"
+                                    class="profile-img" loading="lazy">
                             </div>
                             <h2 data-scroll>Front-end Developer</h2>
                         </div>
@@ -265,17 +269,28 @@
             </ul>
         </aside>
     </div>
+    <!-- <button class="go-to-top">
+        <div></div>
+    </button> -->
     <script src="scripts/jquery-3.7.0.js"></script>
     <script src="scripts/locomotive-scroll.min.js"></script>
     <script src="scripts/common.js"></script>
     <script src="scripts/skills.js"></script>
     <script src="scripts/projects.js"></script>
     <script text="text/javascript">
+        // For Pre-loader 
+        window.onload = function () {
+            //hide the preloader
+            document.querySelector("#loader").style.display = "none";
+        }
+
+        // For Loco-motive Scroll
         const LocoScroll = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
             smooth: true
         });
     </script>
+
 </body>
 
 </html>

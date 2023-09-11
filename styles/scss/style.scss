@@ -341,7 +341,7 @@ img {
     }
 }
 
-// INTRODUCTION SECTION 
+// INTRODUCTION SECTION
 .intro-section {
     // padding-top: 7%;
 
@@ -433,7 +433,6 @@ img {
             // width: 35%;
             // vertical-align: middle;
             // text-align: center;
-
             @include for-laptop-up {
                 width: 100%;
                 display: block;
@@ -468,7 +467,7 @@ img {
     }
 }
 
-// ABOUT SECTION 
+// ABOUT SECTION
 .about-section {
     h3 {
         font-family: "metropolismedium";
@@ -516,11 +515,10 @@ img {
     }
 }
 
-// SKILL SECTION 
+// SKILL SECTION
 .skills-section {
     .skills-icon-wrap {
         text-align: center;
-
 
         .skills-icon-box {
             display: inline-block;
@@ -591,10 +589,10 @@ img {
 
 // PROJECT SECTION
 .project-section {
-    .sort-project{
+    .sort-project {
         text-align: right;
 
-        button{
+        button {
             padding: 1rem 2rem;
             font-size: 1.8rem;
             line-height: 150%;
@@ -606,8 +604,8 @@ img {
             position: relative;
             cursor: pointer;
         }
-        
-        ul{
+
+        ul {
             list-style: none;
             position: absolute;
             top: 103%;
@@ -619,14 +617,14 @@ img {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             display: none;
 
-            &.active{
+            &.active {
                 display: block;
             }
 
-            li{
-                a{
+            li {
+                a {
                     display: block;
-                    text-align:center;
+                    text-align: center;
                     padding: 1rem 2rem;
                     color: inherit;
                     text-decoration: none;
@@ -639,7 +637,7 @@ img {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 2rem;
         grid-row-gap: 5rem;
-        padding: 0 2.5rem;
+        padding: 0 2rem;
 
         @include for-tablet-landscape-up {
             grid-template-columns: 1fr 1fr;
@@ -649,11 +647,25 @@ img {
             grid-template-columns: 1fr;
         }
 
-        @include for-mini-phone-only{
+        @include for-mini-phone-only {
             padding: 0;
         }
 
         .project-box {
+            // display: inline-block;
+            // width: 33.33%;
+            // margin-right: -2px;
+            // padding: 0 1.5rem 5rem 1.5rem;
+
+            // @include for-tablet-landscape-up {
+            //    width: 50%;
+            // }
+
+            // @include for-phone-only {
+            //    width: 100%;
+            //    display: block;
+            // }
+
             .project-img {
                 min-height: 30rem;
 
@@ -680,12 +692,13 @@ img {
                     }
                 }
                 .techology-name {
-                    @include for-flex;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
                     gap: 1rem;
 
                     button {
-                        padding: 1rem;
-                        font-size: 1.8rem;
+                        padding: 0.8rem;
+                        font-size: 1.5rem;
                         line-height: 150%;
                         border: none;
                         border-radius: 8px;
@@ -773,7 +786,7 @@ img {
     }
 }
 
-// CONTACT FORM 
+// CONTACT FORM
 .contact-form {
     width: 20%;
     margin: 0 auto;
@@ -788,7 +801,7 @@ img {
     transform: translateX(-150%);
     transition: 1s ease all;
 
-    @include for-desktop-up{
+    @include for-desktop-up {
         width: 250px;
     }
 
@@ -800,7 +813,7 @@ img {
         transform: translateX(0%);
     }
 
-    .close-btn{
+    .close-btn {
         font-size: 2.2rem;
         position: absolute;
         top: 20px;
@@ -808,7 +821,7 @@ img {
         cursor: pointer;
         color: #c12e29;
 
-        &:hover{
+        &:hover {
             color: #d61d16;
         }
     }
@@ -967,7 +980,7 @@ img {
     }
 }
 
-.error-page{
+.error-page {
     text-align: center;
     height: 100vh;
     display: flex;
@@ -976,7 +989,7 @@ img {
     flex-direction: column;
     gap: 10px;
 
-    h1{
+    h1 {
         font-size: 15rem;
         line-height: 150%;
         font-family: $medium;
@@ -986,15 +999,16 @@ img {
         animation-delay: -2s;
         animation-iteration-count: infinite;
         margin: 0;
-        text-shadow: -2px -2px 4px $slate-color, 
-      3px 3px 5px $primary-color;
+        text-shadow:
+            -2px -2px 4px $slate-color,
+            3px 3px 5px $primary-color;
 
         @include for-tablet-landscape-up {
             font-size: 10rem;
         }
     }
 
-    h2{
+    h2 {
         letter-spacing: normal;
         line-height: 158%;
 
@@ -1002,32 +1016,59 @@ img {
             font-size: 8rem;
         }
 
-        @include for-phone-only{
+        @include for-phone-only {
             font-size: 4rem;
         }
     }
 
-    p{
+    p {
         font-size: 3rem;
         line-height: 200%;
         letter-spacing: 2px;
 
-        @include for-phone-only{
+        @include for-phone-only {
             font-size: 3rem;
         }
-        
-        a{
+
+        a {
             color: $primary-color;
             text-decoration: none;
             font-family: $extra-light;
 
-            &:hover{
+            &:hover {
                 text-decoration: line-through;
                 transition: 1s ease all;
             }
         }
     }
 }
+
+// .go-to-top {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 6rem;
+//     height: 6rem;
+//     position: fixed;
+//     bottom: 20px;
+//     background: $secondary-color;
+//     right: 20px;
+//     border: none;
+//     outline: none;
+//     cursor: pointer;
+//     border-radius: 100%;
+
+//     &::before{
+//         content: "";
+//         position: absolute;
+//         width: 1.5rem;
+//         height: 1.5rem;
+//         border-top: solid 3px $blueish-color;
+//         border-right: solid 3px $blueish-color;
+//         transform: rotate(-45deg);
+//         margin-top: 1rem;
+//     }
+// }
 
 @include for-big-desktop-up {
     html {
@@ -1101,5 +1142,39 @@ img {
     100% {
         opacity: 1;
         transform: translateY(-10px);
+    }
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    flex-direction: column;
+    gap: 2rem;
+
+    .img {
+        background-image: url(../../images/loader.gif);
+        background-repeat: no-repeat;
+        width: 47px;
+        height: 47px;
+        box-shadow:
+            rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        border-radius: 100%;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 150%;
+        color: $primary-color;
+        font-family: $bold;
+        letter-spacing: 2px;
     }
 }
