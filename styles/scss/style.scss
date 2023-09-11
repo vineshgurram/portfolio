@@ -788,7 +788,7 @@ img {
 
 // CONTACT FORM
 .contact-form {
-    width: 20%;
+    width: 23%;
     margin: 0 auto;
     color: $primary-color;
     background-color: $secondary-color;
@@ -802,7 +802,7 @@ img {
     transition: 1s ease all;
 
     @include for-desktop-up {
-        width: 250px;
+        width: 25%;
     }
 
     @include for-phone-only {
