@@ -652,6 +652,12 @@ img {
         }
 
         .project-box {
+            border-radius: 10px;
+            background-color: $secondary-color;
+
+            &:hover{
+                box-shadow: $secondary-color 0px 4px 8px -2px, $secondary-color 0px 0px 0px 1px;
+            }
             // display: inline-block;
             // width: 33.33%;
             // margin-right: -2px;
@@ -670,9 +676,11 @@ img {
                 min-height: 30rem;
 
                 img {
-                    border-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px;
+                    overflow: hidden;
                     width: 100%;
-                    outline: 2px solid #fff;
+                    // outline: 2px solid #fff;
                 }
             }
             .project-info {
@@ -680,15 +688,17 @@ img {
                 align-items: start;
                 justify-content: space-between;
                 flex-direction: column;
+                padding: 2rem;
                 a {
                     display: block;
                     text-decoration: none;
-                    color: $secondary-color;
+                    color: $blueish-color;
                     .project-name {
-                        font-size: 3rem;
+                        font-size: 2.6rem;
                         line-height: 150%;
                         letter-spacing: normal;
                         font-weight: normal;
+
                     }
                 }
                 .techology-name {
@@ -698,10 +708,14 @@ img {
 
                     button {
                         padding: 0.8rem;
-                        font-size: 1.5rem;
+                        font-size: 1.6rem;
                         line-height: 150%;
                         border: none;
                         border-radius: 8px;
+                        background-color: $blueish-color;
+                        color: $secondary-color;
+                        font-family: $bold;
+                        letter-spacing: 1px;
                     }
                 }
             }
@@ -1043,32 +1057,32 @@ img {
     }
 }
 
-// .go-to-top {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 6rem;
-//     height: 6rem;
-//     position: fixed;
-//     bottom: 20px;
-//     background: $secondary-color;
-//     right: 20px;
-//     border: none;
-//     outline: none;
-//     cursor: pointer;
-//     border-radius: 100%;
+.go-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    bottom: 20px;
+    background: $secondary-color;
+    right: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
 
-//     &::before{
-//         content: "";
-//         position: absolute;
-//         width: 1.5rem;
-//         height: 1.5rem;
-//         border-top: solid 3px $blueish-color;
-//         border-right: solid 3px $blueish-color;
-//         transform: rotate(-45deg);
-//         margin-top: 1rem;
-//     }
-// }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-top: solid 3px $blueish-color;
+        border-right: solid 3px $blueish-color;
+        transform: rotate(-45deg);
+        margin-top: 1rem;
+    }
+}
 
 @include for-big-desktop-up {
     html {
@@ -1160,7 +1174,6 @@ img {
     gap: 2rem;
 
     .img {
-        background-image: url(../../images/loader.gif);
         background-repeat: no-repeat;
         width: 47px;
         height: 47px;

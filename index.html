@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="A portfolio of Vinesh Gurram, Front-end Web Developer.">
     <meta name="keywords"
         content="ui developer, mumbai, navi mumbai html, webdev, software, coding, development, engineering, css, scss, javascript, react, vinesh gurram">
     <meta name="author" content="Vinesh Gurram">
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Vinesh Gurram | Front-End Web Developer" />
-    <meta property="og:image" content="images/meta-thumbnail.jpg" />
-    <meta property="og:url" content="https://vineshgurram.github.io/portfolio/" />
-    <meta property="og:description" content="A portfolio of Vinesh Gurram, Front-End Web Developer." />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vinesh Gurram | Front-End Web Developer">
+    <meta property="og:image" content="images/meta-thumbnail.jpg">
+    <meta property="og:url" content="https://vineshgurram.github.io/portfolio/">
+    <meta property="og:description" content="A portfolio of Vinesh Gurram, Front-End Web Developer.">
     <meta property="og:site_name" content="Vinesh Gurram">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:title" content="Vinesh Gurram | Front-End Web Developer">
@@ -28,15 +28,16 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="styles/scss/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Vinesh Gurram | Front-End Web Developer</title>
 </head>
+<a href=""></a>
 
 <body>
     <div id="loader">
-        <div class="img"></div>
+        <div class="img" style="background-image: url(images/loader.gif);"></div>
         <p>Please Wait ...</p>
     </div>
     <!-- Header  -->
@@ -223,7 +224,7 @@
                     </a>
                     <div class="contact-form">
                         <div>
-                            <i class="fa-regular fa-circle-xmark close-btn"></i>
+                            <i class="fa-regular fa-circle-xmark close-btn" title="Close"></i>
                         </div>
                         <h2 class="mb-25">CONTACT ME !</h2>
                         <form enctype="multipart/form-data" action="https://app.formbold.com/s/3d24r" method="POST"
@@ -233,7 +234,7 @@
                                     <input type="text"
                                         class="w-full rounded border border-stroke bg-white px-5 py-3 text-base text-black outline-none focus:border-primary"
                                         name="text_input_389CFB71-8C88-4516-9067-0EE2E32B860B"
-                                        placeholder="Enter Your Name" value="" required="" />
+                                        placeholder="Enter Your Name" value="" required="">
                                 </div>
                             </div>
                             <div class="SortableItem mb-25">
@@ -241,7 +242,7 @@
                                     <input type="email"
                                         class="w-full rounded border border-stroke bg-white px-5 py-3 text-base text-black outline-none focus:border-primary"
                                         name="email_input_1DC01E62-8AC3-4F5B-9438-E33F4419F1F1"
-                                        placeholder="Enter Email Address" value="" required="" />
+                                        placeholder="Enter Email Address" value="" required="">
                                 </div>
                             </div>
                             <div class="SortableItem mb-25">
@@ -249,7 +250,7 @@
                                     <input type="tel"
                                         class="w-full rounded border border-stroke bg-white px-5 py-3 text-base text-black outline-none focus:border-primary"
                                         name="phone_input_22ACD1BC-A7BF-41AB-B4E9-86F8EFC2C8A0"
-                                        placeholder="Enter Your Mobile Number" value="" required="" />
+                                        placeholder="Enter Your Mobile Number" value="" required="">
                                 </div>
                             </div>
                             <div class="SortableItem mb-25">
@@ -261,7 +262,7 @@
                                 </div>
                             </div>
                             <div class="btn-toolbar">
-                                <input type="submit" class="btn" value="Submit" />
+                                <input type="submit" class="btn" value="Submit">
                             </div>
                         </form>
                     </div>
@@ -277,7 +278,7 @@
     <script src="scripts/common.js"></script>
     <script src="scripts/skills.js"></script>
     <script src="scripts/projects.js"></script>
-    <script text="text/javascript">
+    <script>
         // For Pre-loader 
         window.onload = function () {
             //hide the preloader
@@ -287,7 +288,18 @@
         // For Loco-motive Scroll
         const LocoScroll = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
-            smooth: true
+            smooth: true,
+            reloadOnContextChange: true,
+            touchMultiplier: 2,
+            smoothMobile: 0,
+            smartphone: {
+                smooth: false,
+                breakpoint: 767
+            },
+            tablet: {
+                smooth: !1,
+                breakpoint: 1280
+            }
         });
     </script>
 
