@@ -56,7 +56,7 @@ let projectContent = [{
     projectLink: "https://www.fareportal.com/"
 }, {
     projectId: 9,
-    projectImg: "images/pro-thumb-1.jpg",
+    projectImg: "images/pro-thumb-2.jpg",
     projectImgAlternateText: "Thumbnail image for Mindfulness India Summit",
     projectName: "Mindfulness India Summit",
     projectTec: ["HTML", "CSS", "JavaScript", "Wordpress"],
