@@ -88,12 +88,12 @@ let projectContent = [{
 
     latestProject = () => {
         projectBoxTemplate = "";
-        for (let e = projectContent.length - 1; e > 0; e--) {
+        for (let e = projectContent.length - 1; e >= 0; e--) {
             let t = "";
             for (let r = 0; r < projectContent[e].projectTec.length; r++) t += "<button>" + projectContent[e].projectTec[r] + "</button>";
             projectBoxTemplate += '<div class="project-box" data-scroll><a href="' + projectContent[e].projectLink + '" target="_blank"><div class="project-img mb-25"><img src=' + projectContent[e].projectImg + ' alt="' + projectContent[e].projectImgAlternateText + '"></div></a><div class="project-info"><a href="' + projectContent[e].projectLink + '" target="_blank"><h4 class="project-name mb-25">' + projectContent[e].projectName + '</h4></a><div class="techology-name">' + t + "</div></div></div>"
         }
-        document.querySelector(".project-wrap").innerHTML = projectBoxTemplate
+        document.querySelector(".project-wrap").innerHTML = projectBoxTemplate;
     }
 
     oldProject();

@@ -2,7 +2,7 @@
 @import "mixins";
 @import url(../css/normalize.css);
 @import url(../css/font.css);
-@import url(../css/locomotive-scroll.css);
+// @import url(../css/locomotive-scroll.css);
 
 * {
     margin: 0;
@@ -1082,6 +1082,13 @@ img {
     outline: none;
     cursor: pointer;
     border-radius: 100%;
+    opacity: 0;
+    transition: 500ms ease all;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+      }    
 
     &::before{
         content: "";
@@ -1202,5 +1209,4 @@ img {
         letter-spacing: 2px;
     }
 }
-
 

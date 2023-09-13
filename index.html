@@ -41,7 +41,7 @@
         <p>Please Wait ...</p>
     </div>
     <!-- Header  -->
-    <header class="header" data-scroll-section>
+    <header class="header" -sticky>
         <nav class="nav">
             <ul>
                 <li><a href="#intro-section">Home </a></li>
@@ -87,7 +87,7 @@
         <!-- Main -->
         <main>
             <!-- Introduction section  -->
-            <section class="intro-section" id="intro-section" data-scroll-section>
+            <section class="intro-section" id="intro-section" >
                 <div class="container-md">
                     <div class="intro-box-wrap">
                         <div class="left-box" data-scroll data-scroll-position="top" data-scroll-direction="horizontal"
@@ -108,12 +108,12 @@
             </section>
 
             <!-- About Section -->
-            <section class="about-section pt-100" id="about-section" data-scroll-section data-scroll-speed="2">
+            <section class="about-section pt-100" id="about-section"  data-scroll-speed="2">
                 <div class="container-md">
                     <h2 class="main-heading mb-50" data-scroll data-scroll-target="#about-section">About Me</h2>
                     <div data-scroll data-scroll-speed="2">
                         <h3 class="mb-25" data-scroll>I am Front-end Developer</h3>
-                        <div class="about-info mb-50" data-scroll="">
+                        <div class="about-info mb-50" >
                             <p class="mb-10" data-scroll>I'm Vinesh Gurram – a pixel artist turned Front-End Developer
                                 &#127912;.</p>
                             <p class="mb-10" data-scroll>My world revolves around pixels, lines of code and immense
@@ -139,19 +139,19 @@
                 </div>
             </section>
             <!-- Skills Section -->
-            <section class="skills-section pt-100" id="skills-section" data-scroll-section data-scroll-speed="2">
+            <section class="skills-section pt-100" id="skills-section"  data-scroll-speed="2">
                 <div class="container-md">
                     <h2 class="main-heading mb-50">Skills</h2>
-                    <div class="skills-icon-wrap" data-scroll="" data-scroll-speed="2">
+                    <div class="skills-icon-wrap" >
                     </div>
                 </div>
             </section>
             <!-- Project Section -->
-            <section class="project-section pt-100 mb-100" id="project-section" data-scroll-section
-                data-scroll-speed="4">
+            <section class="project-section pt-100 mb-100" id="project-section" 
+                data-scroll-speed="2">
                 <div class="container-md">
                     <h2 class="main-heading mb-25" data-scroll>Projects</h2>
-                    <div class="sort-project mb-25" data-scroll>
+                    <div class="sort-project mb-50" data-scroll>
                         <button>Sort By : <span>Old Projects</span>
                             <ul>
                                 <li>
@@ -163,13 +163,13 @@
                             </ul>
                         </button>
                     </div>
-                    <div class="project-wrap" data-scroll="" data-scroll-speed="2">
+                    <div class="project-wrap" >
                     </div>
                 </div>
             </section>
         </main>
         <!-- Footer -->
-        <footer class="footer pt-100 pb-50" data-scroll-section>
+        <footer class="footer pt-100 pb-50">
             <div class="container-md">
                 <h2 class="main-heading mb-50" data-scroll>Get In <br>Contact <i class="fa-solid fa-angles-down"></i>
                 </h2>
@@ -190,7 +190,7 @@
                                 class="fa-regular fa-envelope-open"></i></a>
                     </div>
                 </div>
-                <p class="copyright-txt" data-scroll="" data-scroll-direction="top">
+                <p class="copyright-txt"  data-scroll-direction="top">
                     Vinesh Gurram © All rights reserved.
                 </p>
             </div>
@@ -198,7 +198,7 @@
     </div>
     <!-- Left Social Navbar  -->
     <div>
-        <aside class="left-contact-box" data-scroll-section="">
+        <aside class="left-contact-box">
             <ul>
                 <li>
                     <a href="https://in.linkedin.com/in/vinesh-gurram" target="_blank">
@@ -270,11 +270,11 @@
             </ul>
         </aside>
     </div>
-        <button class="go-to-top">
-            <div></div>
-        </button>
+    <button class="go-to-top" title="Back To Top">
+    </button>
     <script src="scripts/jquery-3.7.0.js"></script>
-    <script src="scripts/locomotive-scroll.min.js"></script>
+    <script src="scripts/jquery.anchorScroll.js"></script>
+    <!-- <script src="scripts/locomotive-scroll.min.js"></script> -->
     <script src="scripts/common.js"></script>
     <script src="scripts/skills.js"></script>
     <script src="scripts/projects.js"></script>
@@ -284,25 +284,6 @@
             //hide the preloader
             document.querySelector("#loader").style.display = "none";
         }
-
-        // For Loco-motive Scroll
-        const LocoScroll = new LocomotiveScroll({
-            el: document.querySelector("[data-scroll-container]"),
-            smooth: true,
-            reloadOnContextChange: true,
-            touchMultiplier: 2,
-            smoothMobile: 0,
-            smartphone: {
-                smooth: false,
-                breakpoint: 767
-            },
-            tablet: {
-                smooth: !1,
-                breakpoint: 1280
-            }
-        });
     </script>
-
 </body>
-
 </html>
