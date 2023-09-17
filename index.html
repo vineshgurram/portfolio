@@ -33,9 +33,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Vinesh Gurram | Front-End Web Developer</title>
 </head>
-<a href=""></a>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1R9EE2VLH9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1R9EE2VLH9');
+</script>
 
 <body>
+    <!-- Pre-loader -->
     <div id="loader">
         <div class="img" style="background-image: url(images/loader.gif);"></div>
         <p>Please Wait ...</p>
@@ -270,9 +280,9 @@
             </ul>
         </aside>
     </div>
-        <button class="go-to-top">
-            <div></div>
-        </button>
+    <button class="go-to-top">
+        <div></div>
+    </button>
     <script src="scripts/jquery-3.7.0.js"></script>
     <script src="scripts/locomotive-scroll.min.js"></script>
     <script src="scripts/common.js"></script>
