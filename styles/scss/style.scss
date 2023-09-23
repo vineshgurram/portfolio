@@ -565,11 +565,20 @@ img {
                     &.fa-bootstrap {
                         color: #a076f9;
                     }
-                    &.fa-python {
-                        color: #ffb84c;
+                    &.fa-react {
+                        color: #97FFF4;
                     }
                     &.fa-wordpress {
-                        color: #98eecc;
+                        color: #279EFF;
+                    }
+                    &.fa-git-alt{
+                        color: #F94C10;
+                    }
+                    &.fa-github-alt{
+                        color: #272829;
+                    }
+                    &.fa-less{
+                        color: #19A7CE;
                     }
                 }
             }
@@ -931,6 +940,7 @@ img {
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    width: 6rem;
 
     ul {
         list-style: none;
@@ -1082,6 +1092,12 @@ img {
     outline: none;
     cursor: pointer;
     border-radius: 100%;
+    display: none;
+    transition: 500ms ease all;
+
+    &.active{
+        display: flex;
+    }
 
     &::before{
         content: "";
