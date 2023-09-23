@@ -1109,6 +1109,10 @@ img {
         transform: rotate(-45deg);
         margin-top: 1rem;
     }
+
+    &:hover{
+        background: #D2D2C4;
+    }
 }
 
 @include for-big-desktop-up {
