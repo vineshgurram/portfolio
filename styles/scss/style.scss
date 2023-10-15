@@ -2,7 +2,7 @@
 @import "mixins";
 @import url(../css/normalize.css);
 @import url(../css/font.css);
-// @import url(../css/locomotive-scroll.css);
+@import url(../css/locomotive-scroll.css);
 
 * {
     margin: 0;
@@ -700,7 +700,7 @@ img {
                     border-top-left-radius: 10px;
                     overflow: hidden;
                     width: 100%;
-                    outline: 1px solid $slate-color;
+                    outline: 2px solid $slate-color;
                 }
             }
             .project-info {
@@ -1222,4 +1222,3 @@ img {
         letter-spacing: 2px;
     }
 }
-

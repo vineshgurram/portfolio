@@ -1,5 +1,6 @@
 @import url(../css/normalize.css);
 @import url(../css/font.css);
+@import url(../css/locomotive-scroll.css);
 * {
   margin: 0;
   padding: 0;
@@ -487,11 +488,20 @@ img {
 .skills-section .skills-icon-wrap .skills-icon-box .skills-icon i.fa-bootstrap {
   color: #a076f9;
 }
-.skills-section .skills-icon-wrap .skills-icon-box .skills-icon i.fa-python {
-  color: #ffb84c;
+.skills-section .skills-icon-wrap .skills-icon-box .skills-icon i.fa-react {
+  color: #97FFF4;
 }
 .skills-section .skills-icon-wrap .skills-icon-box .skills-icon i.fa-wordpress {
-  color: #98eecc;
+  color: #279EFF;
+}
+.skills-section .skills-icon-wrap .skills-icon-box .skills-icon i.fa-git-alt {
+  color: #F94C10;
+}
+.skills-section .skills-icon-wrap .skills-icon-box .skills-icon i.fa-github-alt {
+  color: #272829;
+}
+.skills-section .skills-icon-wrap .skills-icon-box .skills-icon i.fa-less {
+  color: #19A7CE;
 }
 .skills-section .skills-icon-wrap .skills-icon-box h3 {
   font-size: 3rem;
@@ -587,7 +597,7 @@ img {
   border-top-left-radius: 10px;
   overflow: hidden;
   width: 100%;
-  outline: 1px solid #26282A;
+  outline: 2px solid #26282A;
 }
 .project-section .project-wrap .project-box .project-info {
   display: flex;
@@ -919,12 +929,11 @@ img {
   outline: none;
   cursor: pointer;
   border-radius: 100%;
-  opacity: 0;
+  display: none;
   transition: 500ms ease all;
 }
 .go-to-top.active {
-  opacity: 1;
-  visibility: visible;
+  display: flex;
 }
 .go-to-top::before {
   content: "";
@@ -935,6 +944,9 @@ img {
   border-right: solid 3px #063970;
   transform: rotate(-45deg);
   margin-top: 1rem;
+}
+.go-to-top:hover {
+  background: #D2D2C4;
 }
 
 @media (max-width: 1700px) {
