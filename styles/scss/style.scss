@@ -691,7 +691,7 @@ img {
                     border-top-left-radius: 10px;
                     overflow: hidden;
                     width: 100%;
-                    // outline: 2px solid #fff;
+                    outline: 1px solid $slate-color;
                 }
             }
             .project-info {
@@ -931,6 +931,7 @@ img {
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
+    width: 6rem;
 
     ul {
         list-style: none;

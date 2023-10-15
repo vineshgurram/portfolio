@@ -42,21 +42,21 @@ let projectContent = [{
     projectLink: "projects/crud-operations/index.html"
 }, {
     projectId: 7,
-    projectImg: "images/pro-thumb-1.jpg",
+    projectImg: "images/doreen-logo.jpg",
     projectImgAlternateText: "Thumbnail image for Doreen Corporate Website",
     projectName: "Doreen Corporate",
     projectTec: ["HTML", "CSS", "JavaScript", "Wordpress"],
     projectLink: "https://doreen.com/"
 }, {
     projectId: 8,
-    projectImg: "images/pro-thumb-2.jpg",
+    projectImg: "images/fareportal-logo.jpg",
     projectImgAlternateText: "Thumbnail image for Fareportal India",
     projectName: "Fareportal India",
     projectTec: ["HTML", "CSS", "JavaScript", "Wordpress"],
     projectLink: "https://www.fareportal.com/"
 }, {
     projectId: 9,
-    projectImg: "images/pro-thumb-2.jpg",
+    projectImg: "images/mis-logo.jpg",
     projectImgAlternateText: "Thumbnail image for Mindfulness India Summit",
     projectName: "Mindfulness India Summit",
     projectTec: ["HTML", "CSS", "JavaScript", "Wordpress"],
@@ -70,7 +70,7 @@ let projectContent = [{
     projectLink: "https://www.mpbirlacement.com/"
 }, {
     projectId: 11,
-    projectImg: "images/pro-thumb-1.jpg",
+    projectImg: "images/doreen-dev-logo.jpg",
     projectImgAlternateText: "Thumbnail image for Doreen Development",
     projectName: "Doreen Development",
     projectTec: ["HTML", "CSS", "JavaScript", "Wordpress"],
