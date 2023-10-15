@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-$(".btn-wrap .close-btn").click((function(){$(this).toggleClass("active"),$(".nav").toggleClass("active")})),$(".nav li").click((function(){$(".nav").removeClass("active"),$(".close-btn").toggleClass("active")})),$("#get-form").click((function(){$(".contact-form").toggleClass("active")})),$(".contact-form .close-btn").click((function(){$(".contact-form").removeClass("active")})),$(".sort-project button").click((function(t){t.stopPropagation(),$(".sort-project ul").toggleClass("active")})),$(document).click((function(){$(".sort-project ul").removeClass("active")})),$(".sort-project ul a").click((function(){let t=$(this).text();$(".sort-project button span").text(t),$(".project-wrap").toggleClass("active")}));var btn=$(".go-to-top");$(window).scroll((function(){$(window).scrollTop()>1e3?btn.addClass("active"):btn.removeClass("active")})),btn.on("click",(function(t){t.stopPropagation(),$("html, body").animate({scrollTop:0},"300")}));
-=======
+// $(".btn-wrap .close-btn").click((function(){$(this).toggleClass("active"),$(".nav").toggleClass("active")})),$(".nav li").click((function(){$(".nav").removeClass("active"),$(".close-btn").toggleClass("active")})),$("#get-form").click((function(){$(".contact-form").toggleClass("active")})),$(".contact-form .close-btn").click((function(){$(".contact-form").removeClass("active")})),$(".sort-project button").click((function(t){t.stopPropagation(),$(".sort-project ul").toggleClass("active")})),$(document).click((function(){$(".sort-project ul").removeClass("active")})),$(".sort-project ul a").click((function(){let t=$(this).text();$(".sort-project button span").text(t),$(".project-wrap").toggleClass("active")}));var btn=$(".go-to-top");$(window).scroll((function(){$(window).scrollTop()>1e3?btn.addClass("active"):btn.removeClass("active")})),btn.on("click",(function(t){t.stopPropagation(),$("html, body").animate({scrollTop:0},"300")}));
+
 $(document).ready(function () {
     $(".btn-wrap .close-btn").click((function () {
         $(this).toggleClass("active"), $(".nav").toggleClass("active");
@@ -47,4 +46,3 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: 0 }, '1000');
     });
 });
->>>>>>> fe57bb3a9705ebaa79494641c9f739319af2d0ab
