@@ -565,11 +565,20 @@ img {
                     &.fa-bootstrap {
                         color: #a076f9;
                     }
-                    &.fa-python {
-                        color: #ffb84c;
+                    &.fa-react {
+                        color: #97FFF4;
                     }
                     &.fa-wordpress {
-                        color: #98eecc;
+                        color: #279EFF;
+                    }
+                    &.fa-git-alt{
+                        color: #F94C10;
+                    }
+                    &.fa-github-alt{
+                        color: #272829;
+                    }
+                    &.fa-less{
+                        color: #19A7CE;
                     }
                 }
             }
@@ -1083,13 +1092,12 @@ img {
     outline: none;
     cursor: pointer;
     border-radius: 100%;
-    opacity: 0;
+    display: none;
     transition: 500ms ease all;
 
-    &.active {
-        opacity: 1;
-        visibility: visible;
-      }    
+    &.active{
+        display: flex;
+    }
 
     &::before{
         content: "";
@@ -1100,6 +1108,10 @@ img {
         border-right: solid 3px $blueish-color;
         transform: rotate(-45deg);
         margin-top: 1rem;
+    }
+
+    &:hover{
+        background: #D2D2C4;
     }
 }
 
