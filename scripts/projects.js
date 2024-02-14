@@ -39,7 +39,7 @@ let projectContent = [{
     projectImgAlternateText: "Thumbnail image for CRUD - Create Read Update Delete Operations",
     projectName: "CRUD Operations",
     projectTec: ["HTML", "JavaScript", "Bootstrap"],
-    projectLink: "projects/crud-operations/index.html"
+    projectLink: "https://vineshgurram.github.io/crud/"
 }, {
     projectId: 7,
     projectImg: "images/doreen-logo.jpg",
@@ -75,7 +75,24 @@ let projectContent = [{
     projectName: "Doreen Development",
     projectTec: ["HTML", "CSS", "JavaScript", "Wordpress"],
     projectLink: "https://doreendevelopment.com/"
-}],
+},
+{
+    projectId: 12,
+    projectImg: "images/pro-thumb-2.jpg",
+    projectImgAlternateText: "Thumbnail image for Task List Manager",
+    projectName: "Task List Manager",
+    projectTec: ["HTML", "CSS", "JavaScript"],
+    projectLink: "https://vineshgurram.github.io/task-list-manager/"
+},
+{
+    projectId: 13,
+    projectImg: "images/pro-thumb-2.jpg",
+    projectImgAlternateText: "Thumbnail image for Image Gallery",
+    projectName: "Image Gallery",
+    projectTec: ["HTML", "CSS", "JavaScript"],
+    projectLink: "https://vineshgurram.github.io/image-gallery/"
+}
+]
     projectBoxTemplate = "";
     oldProject = () => {
     projectBoxTemplate = "";
