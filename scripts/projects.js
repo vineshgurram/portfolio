@@ -63,7 +63,7 @@ let projectContent = [{
     projectLink: "https://mindfulnessindiasummit.com/"
 }, {
     projectId: 10,
-    projectImg: "images/pro-thumb-2.jpg",
+    projectImg: "images/mpbirla-logo.jpg",
     projectImgAlternateText: "Thumbnail image for MP Birla Cement",
     projectName: "MP Birla Cement",
     projectTec: ["HTML", "CSS", "JavaScript", "Wordpress"],
@@ -78,11 +78,11 @@ let projectContent = [{
 },
 {
     projectId: 12,
-    projectImg: "images/pro-thumb-2.jpg",
-    projectImgAlternateText: "Thumbnail image for Task List Manager",
-    projectName: "Task List Manager",
+    projectImg: "images/mytask-app-logo.jpg",
+    projectImgAlternateText: "Thumbnail image for MyTask App",
+    projectName: "MyTask App",
     projectTec: ["HTML", "CSS", "JavaScript"],
-    projectLink: "https://vineshgurram.github.io/task-list-manager/"
+    projectLink: "https://vineshgurram.github.io/mytask-app/"
 },
 {
     projectId: 13,
@@ -92,25 +92,61 @@ let projectContent = [{
     projectTec: ["HTML", "CSS", "JavaScript"],
     projectLink: "https://vineshgurram.github.io/image-gallery/"
 }
+    , {
+    projectId: 14,
+    projectImg: "images/calculator-logo.jpg",
+    projectImgAlternateText: "Thumbnail image for Calculator",
+    projectName: "Calculator",
+    projectTec: ["HTML", "CSS", "JavaScript"],
+    projectLink: "https://vineshgurram.github.io/calculator/"
+}, {
+    projectId: 15,
+    projectImg: "images/property-crm-logo.jpg",
+    projectImgAlternateText: "Thumbnail image for PropertyCRM",
+    projectName: "PropertyCRM",
+    projectTec: ["HTML", "CSS", "JavaScript"],
+    projectLink: "https://propertycrm.in/"
+}, {
+    projectId: 16,
+    projectImg: "images/mirania-logo.jpg",
+    projectImgAlternateText: "Thumbnail image for Mirania",
+    projectName: "Mirania",
+    projectTec: ["HTML", "CSS", "JavaScript","Jquery"],
+    projectLink: "https://www.mirania.com/"
+}, {
+    projectId: 17,
+    projectImg: "images/tribal-box-studios-logo.jpg",
+    projectImgAlternateText: "Thumbnail image for Tribal Box Studio",
+    projectName: "Tribal Box Studio",
+    projectTec: ["HTML", "CSS", "JavaScript","Jquery"],
+    projectLink: "https://www.tribalboxstudio.com/"
+}, {
+    projectId: 18,
+    projectImg: "images/doreen-logo.jpg",
+    projectImgAlternateText: "Thumbnail image for Doreen Developments",
+    projectName: "Doreen Developments",
+    projectTec: ["HTML", "CSS", "JavaScript","Jquery"],
+    projectLink: "https://doreendevelopments.com/"
+}
 ]
-    projectBoxTemplate = "";
-    oldProject = () => {
+projectBoxTemplate = "";
+oldProject = () => {
     projectBoxTemplate = "";
     for (let e = 0; e < projectContent.length; e++) {
         let t = "";
         for (let r = 0; r < projectContent[e].projectTec.length; r++) t += "<button>" + projectContent[e].projectTec[r] + "</button>";
         projectBoxTemplate += '<div class="project-box" data-scroll><a href="' + projectContent[e].projectLink + '" target="_blank" title="Click here to see Project"><div class="project-img mb-25"><img src=' + projectContent[e].projectImg + ' alt="' + projectContent[e].projectImgAlternateText + '" loading="lazy"></div></a><div class="project-info"><a href="' + projectContent[e].projectLink + '" target="_blank" title="Click here to see Project"><h4 class="project-name mb-25">' + projectContent[e].projectName + '</h4></a><div class="techology-name">' + t + "</div></div></div>", document.querySelector(".project-wrap").innerHTML = projectBoxTemplate
     }
-    }
+}
 
-    latestProject = () => {
-        projectBoxTemplate = "";
-        for (let e = projectContent.length - 1; e >= 0; e--) {
-            let t = "";
-            for (let r = 0; r < projectContent[e].projectTec.length; r++) t += "<button>" + projectContent[e].projectTec[r] + "</button>";
-            projectBoxTemplate += '<div class="project-box" data-scroll><a href="' + projectContent[e].projectLink + '" target="_blank"><div class="project-img mb-25"><img src=' + projectContent[e].projectImg + ' alt="' + projectContent[e].projectImgAlternateText + '"></div></a><div class="project-info"><a href="' + projectContent[e].projectLink + '" target="_blank"><h4 class="project-name mb-25">' + projectContent[e].projectName + '</h4></a><div class="techology-name">' + t + "</div></div></div>"
-        }
-        document.querySelector(".project-wrap").innerHTML = projectBoxTemplate;
+latestProject = () => {
+    projectBoxTemplate = "";
+    for (let e = projectContent.length - 1; e >= 0; e--) {
+        let t = "";
+        for (let r = 0; r < projectContent[e].projectTec.length; r++) t += "<button>" + projectContent[e].projectTec[r] + "</button>";
+        projectBoxTemplate += '<div class="project-box" data-scroll><a href="' + projectContent[e].projectLink + '" target="_blank"><div class="project-img mb-25"><img src=' + projectContent[e].projectImg + ' alt="' + projectContent[e].projectImgAlternateText + '"></div></a><div class="project-info"><a href="' + projectContent[e].projectLink + '" target="_blank"><h4 class="project-name mb-25">' + projectContent[e].projectName + '</h4></a><div class="techology-name">' + t + "</div></div></div>"
     }
+    document.querySelector(".project-wrap").innerHTML = projectBoxTemplate;
+}
 
-    oldProject();
+oldProject();

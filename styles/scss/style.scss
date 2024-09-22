@@ -664,19 +664,18 @@ img {
             border-radius: 10px;
             background-color: $secondary-color;
             overflow: hidden;
+            transition: 500ms ease all;
+
+            img{
+                transition: 500ms ease all;
+            }
 
             &:hover{
                 box-shadow: $secondary-color 0px 4px 8px -2px, $secondary-color 0px 0px 0px 1px;
-                transition: 500ms ease all;
                 
                 img{
                     transform: scale(1.1);
-                    transition: 500ms ease all;
-                }
-
-                h4{
-                    font-family: $bold;
-                }
+                }                
             }
             // display: inline-block;
             // width: 33.33%;
@@ -694,6 +693,8 @@ img {
 
             .project-img {
                 min-height: 30rem;
+                overflow: hidden;
+                border-bottom: 2px solid $blueish-color;
 
                 img {
                     border-top-right-radius: 10px;
