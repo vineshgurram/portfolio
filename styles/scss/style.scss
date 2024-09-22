@@ -671,7 +671,7 @@ img {
             }
 
             &:hover{
-                box-shadow: $secondary-color 0px 4px 8px -2px, $secondary-color 0px 0px 0px 1px;
+                box-shadow: $secondary-color 0px 4px 8px -2px, $secondary-color 0px 0px 0px 0px;
                 
                 img{
                     transform: scale(1.1);
