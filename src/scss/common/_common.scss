@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: $fnt1;
+    font-weight: $font-regular;
+}
+
+body{
+    background-color: $bg-primary;
+}
+
+
+@media screen and (min-width:1300px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+.max-453{
+    max-width: 453px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+

@@ -1,0 +1,49 @@
+.bs-heading {
+    color: $txt-primary;
+    line-height: 1.4;
+
+    &.typ-gradient-1{
+        background: rgb(51,210,255);
+        background: -moz-linear-gradient(-91deg, rgba(51,210,255,1) 0%, rgba(152,69,232,1) 55%, rgba(221,87,137,1) 100%);
+        background: -webkit-linear-gradient(-91deg, rgba(51,210,255,1) 0%, rgba(152,69,232,1) 55%, rgba(221,87,137,1) 100%);
+        background: linear-gradient(-91deg, rgba(51,210,255,1) 0%, rgba(152,69,232,1) 55%, rgba(221,87,137,1) 100%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &.typ-18 {
+        font-size: 18px;
+    }
+
+    &.typ-24 {
+        font-size: 24px;
+    }
+ 
+    &.typ-96 {
+        font-size: 96px;
+    }
+
+    &.typ-fnt2{
+        font-family: $fnt2;
+    }
+
+    &.typ-300 {
+        font-weight: $font-light;
+    }
+
+    &.typ-400 {
+        font-weight: $font-regular;
+    }
+
+    &.typ-500 {
+        font-weight: $font-medium;
+    }
+
+    &.typ-600 {
+        font-weight: $font-semibold;
+    }
+
+    &.typ-700 {
+        font-weight: $font-bold;
+    }
+}

@@ -1,0 +1,70 @@
+.bs-header {
+    background-color: $bg-secondary;
+    @media screen and (max-width:1024px) {
+        padding: 30px;
+    }
+    
+    @media screen and (max-width:767px) {
+        padding: 20px;
+    }
+    
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // border-bottom: 1px solid $clr-white1;
+        padding: 50px 0;
+
+        .logo-wrap {
+            .logo-txt {
+                font-weight: $font-light;
+                color: $clr-white;
+                font-size: 24px;
+                line-height: 1.2;
+                letter-spacing: 0.2px;
+                margin: 0;
+            }
+        }
+
+        .offcanvas-body {
+            .nav {
+                display: flex;
+                grid-gap: 30px;
+
+                .nav-list {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0;
+                    grid-gap: 30px;
+                    font-family: $fnt1;
+                    font-size: 18px;
+                    line-height: 1.2;
+                    color: $clr-white;
+                    font-weight: $font-light;
+                    letter-spacing: 0.2px;
+                    margin: 0;
+
+
+                    .nav-item {
+                        padding: 0;
+
+                        .nav-link {
+                            padding: 0;
+                            color: inherit;
+                            font-weight: inherit;
+                            font-size: inherit;
+                        }
+                    }
+                }
+
+                .toggle-mode{
+                    .icon{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

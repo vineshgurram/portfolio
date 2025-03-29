@@ -1,0 +1,41 @@
+.bs-para {
+    color: $txt-primary;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+
+    &.typ-16 {
+        font-size: 16px;
+    }
+
+    &.typ-300 {
+        font-weight: $font-light;
+    }
+
+    &.typ-18 {
+        font-size: 18px;
+    }
+
+    &.typ-txt-secondary{
+        color: $txt-secondary;
+    }
+  
+    &.typ-clr-blue{
+        color: $clr-blue;
+    }
+
+    &.typ-400 {
+        font-weight: $font-regular;
+    }
+
+    &.typ-500 {
+        font-weight: $font-medium;
+    }
+
+    &.typ-600 {
+        font-weight: $font-semibold;
+    }
+    
+    &.typ-700 {
+        font-weight: $font-bold;
+    }
+}

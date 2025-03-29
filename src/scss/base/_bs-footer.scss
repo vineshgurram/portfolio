@@ -1,0 +1,47 @@
+.bs-footer {
+    .wrapper {
+        border-top: 1px solid $clr-white1;
+        padding: 100px 0 80px;
+
+        .contact-txt {
+            font-family: $fnt1;
+            font-size: 18px;
+            line-height: 1.2;
+            color: $clr-white;
+            font-weight: $font-light;
+            letter-spacing: 0.2px;
+            margin: 0;
+        }
+
+        .contact-box-wrapper {
+            @include grid($columns: repeat(4, 1fr),$gap:10px);
+
+            a{
+                text-decoration: none;
+                .contact-box {
+                    border: 1px solid $clr-white1;
+                    border-radius: 4px;
+                    padding: 15px 35px;
+                    display: flex;
+                    align-items: center;
+                    grid-gap: 10px;
+                    justify-content: center;
+    
+                    .icon {
+                        font-size: 20px;
+                    }
+    
+                    .txt-icon {
+                        font-family: $fnt1;
+                        font-size: 16px;
+                        font-weight: $font-light;
+                        line-height: 1;
+                        color: $clr-white1;
+                        letter-spacing: 0.2px;
+                    }
+                }
+            }
+
+        }
+    }
+}

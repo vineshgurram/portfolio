@@ -1,0 +1,21 @@
+.lyt-section {
+    .wrapper {
+        padding: 100px 0;
+
+        &.border-top-1{
+            border-top: 1px solid $clr-white;
+        }
+    }
+
+    &.typ-hero-section {
+        padding: 100px 0 150px;
+        background-color: $bg-secondary;
+    }
+
+    &.typ-project-section {
+        
+    }
+
+    &.typ-education-section {
+    }
+}
