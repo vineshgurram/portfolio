@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import AppRoutes from "./routes/AppRoutes";
 import "./scss/custom.scss";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
   const lenis = useRef(null);

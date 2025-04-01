@@ -7,7 +7,7 @@ export default function Header() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <header className="bs-header">
+    <header className="bs-header sticky-top">
       <Container>
         <Navbar.Toggle onClick={handleShow} className="d-lg-none" />
         <div className="wrapper">

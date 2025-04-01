@@ -1,0 +1,40 @@
+.bs-tab {
+    &.typ-experience-tab {
+        @include grid($columns: 200px auto,$gap:80px);
+        .nav {
+            &.nav-tabs {
+                flex-direction: column;
+                gap: 0;
+                border: none;
+                .nav-item {
+                    .nav-link {
+                        color: $clr-white;
+                        font-size: 18px;
+                        line-height: 1;
+                        border-radius: 0;
+                        border-color: transparent;
+                        width: 100%;
+                        display: block;
+                        text-align: left;
+                        border-left-width: 2px;
+                        padding: 18px 36px;
+                        border-left-color: rgba(31, 30, 30, 1);
+
+                        &.active {
+                            border-left-color: $clr-white;
+                            background-color: rgba(31, 30, 30, 1);
+                        }
+                    }
+                }
+
+            }
+        }
+        .tab-content{
+         ul{
+            li{
+                padding-bottom: 15px;
+            }
+         }   
+        }
+    }
+}
