@@ -1,0 +1,41 @@
+[
+  {
+    "companyName": "Creativewebo LLP",
+    "role": "Front-end Developer",
+    "location": "Vashi, Navi Mumbai",
+    "from": "May 2024",
+    "to": "Present",
+    "responsibilities": [
+      "Gained hands-on experience with React and Next.js, building reusable and efficient components.",
+      "Used tools like Postman to test APIs, ensuring smooth integration and functionality.",
+      "Optimized website performance using tools like Google PageSpeed and GTmetrix, resulting in faster load times.",
+      "Applied SMACSS to organize and structure CSS, ensuring cleaner, more scalable code.",
+      "Designed smooth animations with GSAP and various animation libraries, increasing user engagement."
+    ]
+  },
+  {
+    "companyName": "The Adroit",
+    "role": "Jr. Front-end Developer",
+    "location": "Belapur, Navi Mumbai",
+    "from": "Sep 2022",
+    "to": "Apr 2024",
+    "responsibilities": [
+      "Worked with designers to improve UI/UX and make interfaces easy to use.",
+      "Collaborated with backend developers to develop and enhance the application.",
+      "Optimized website performance by reducing page load time.",
+      "Gained hands-on experience with version control (Git). "
+    ]
+  },
+  {
+    "companyName": "MyCaptain",
+    "role": "Campus Ambassador",
+    "location": "Navi Mumbai, India",
+    "from": "Jul 2021",
+    "to": "Aug 2021",
+    "responsibilities": [
+      "Promoted the company’s brand on campus.",
+      "Managed basic social media marketing tasks.",
+      "Helped increase product reach among the targeted student audience."
+    ]
+  }
+]

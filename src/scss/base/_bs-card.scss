@@ -19,16 +19,19 @@
             }
         }
 
-        .icon-box-wrapper{
+        .icon-box-wrapper {
             flex: 0 0 70px;
-            a{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            a {
                 text-decoration: none;
             }
 
-            .icon{
+            .icon {
                 font-size: 24px;
 
-                &:first-child{
+                &:first-child {
                     margin-right: 10px;
                 }
             }

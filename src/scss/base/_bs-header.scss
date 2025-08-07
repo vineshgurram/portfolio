@@ -1,19 +1,27 @@
 .bs-header {
     background-color: $bg-secondary;
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width: 1024px) {
         padding: 30px;
     }
-    
-    @media screen and (max-width:767px) {
+
+    @media screen and (max-width: 767px) {
         padding: 20px;
     }
-    
+
+    .navbar-toggler-icon:before {
+        content: "\e906";
+        font-family: "icomoon";
+        font-size: 25px;
+        color: $clr-white1;
+    }
+
     .wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
         // border-bottom: 1px solid $clr-white1;
-        padding: 50px 0;
+        padding: 30px 0;
+        width: 100%;
 
         .logo-wrap {
             .logo-txt {
@@ -46,7 +54,6 @@
                     letter-spacing: 0.2px;
                     margin: 0;
 
-
                     .nav-item {
                         padding: 0;
 
@@ -59,12 +66,75 @@
                     }
                 }
 
-                .toggle-mode{
-                    .icon{
+                .toggle-mode {
+                    .icon {
                         font-size: 24px;
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+    .bs-header {
+        background-color: $bg-secondary;
+                border-bottom: 1px solid;
+
+        .wrapper {
+            padding: 0;
+
+            .logo-wrap {
+                .logo-txt {
+                }
+            }
+
+            .offcanvas-body {
+                .nav {
+                    .nav-list {
+                        .nav-item {
+                            .nav-link {
+                            }
+                        }
+                    }
+
+                    .toggle-mode {
+                        .icon {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.offcanvas-body {
+    background-color: $bg-secondary;
+    .nav-list {
+        list-style: none;
+        padding-left: 0;
+        font-family: $fnt1;
+        font-size: 20px;
+        line-height: 1.2;
+        color: $clr-white;
+        font-weight: $font-medium;
+        letter-spacing: 1px;
+        display: block;
+        
+        .nav-item{
+            .nav-link{
+                color: inherit;
+                padding: 0;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.offcanvas-header {
+    background-color: $bg-secondary;
+
+    .btn-close{
+        background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
     }
 }

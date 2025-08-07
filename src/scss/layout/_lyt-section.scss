@@ -19,3 +19,27 @@
     &.typ-education-section {
     }
 }
+
+@media screen and (max-width: $tablet-breakpoint) {
+    .lyt-section {
+        .wrapper {
+            padding: 70px 0;
+    
+            &.border-top-1{
+                border-top: 1px solid $clr-white;
+            }
+        }
+    
+        &.typ-hero-section {
+            padding: 70px 0 70px;
+            background-color: $bg-secondary;
+        }
+    
+        &.typ-project-section {
+            
+        }
+    
+        &.typ-education-section {
+        }
+    }
+}

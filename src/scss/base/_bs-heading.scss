@@ -2,20 +2,47 @@
     color: $txt-primary;
     line-height: 1.4;
 
-    &.typ-gradient-1{
-        background: rgb(51,210,255);
-        background: -moz-linear-gradient(-91deg, rgba(51,210,255,1) 0%, rgba(152,69,232,1) 55%, rgba(221,87,137,1) 100%);
-        background: -webkit-linear-gradient(-91deg, rgba(51,210,255,1) 0%, rgba(152,69,232,1) 55%, rgba(221,87,137,1) 100%);
-        background: linear-gradient(-91deg, rgba(51,210,255,1) 0%, rgba(152,69,232,1) 55%, rgba(221,87,137,1) 100%);
+    &.typ-gradient-1 {
+        background: rgb(51, 210, 255);
+        background: -moz-linear-gradient(
+            -91deg,
+            rgba(51, 210, 255, 1) 0%,
+            rgba(152, 69, 232, 1) 55%,
+            rgba(221, 87, 137, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+            -91deg,
+            rgba(51, 210, 255, 1) 0%,
+            rgba(152, 69, 232, 1) 55%,
+            rgba(221, 87, 137, 1) 100%
+        );
+        background: linear-gradient(
+            -91deg,
+            rgba(51, 210, 255, 1) 0%,
+            rgba(152, 69, 232, 1) 55%,
+            rgba(221, 87, 137, 1) 100%
+        );
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 
-    &.typ-txt-secondary{
+    &.typ-gradient-2 {
+        background: #9845e8;
+        background: linear-gradient(
+            90deg,
+            rgba(152, 69, 232, 1) 0%,
+            rgba(51, 210, 255, 1) 55%,
+            rgba(221, 87, 137, 1) 100%
+        );
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &.typ-txt-secondary {
         color: $txt-secondary;
     }
-  
-    &.typ-clr-blue{
+
+    &.typ-clr-blue {
         color: $clr-blue;
     }
 
@@ -26,12 +53,12 @@
     &.typ-24 {
         font-size: 24px;
     }
- 
+
     &.typ-96 {
         font-size: 96px;
     }
 
-    &.typ-fnt2{
+    &.typ-fnt2 {
         font-family: $fnt2;
     }
 
@@ -53,5 +80,21 @@
 
     &.typ-700 {
         font-weight: $font-bold;
+    }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+    .bs-heading {
+        &.typ-gradient-1 {
+            font-size: 76px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+    .bs-heading {
+        &.typ-gradient-1 {
+            font-size: 56px;
+        }
     }
 }

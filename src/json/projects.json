@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "projectName": "Tribal Box Studio",
+    "projectDescription": "A video production website helping brands turn ideas into impactful visual stories.",
+    "projectDetailLink":"",
+    "projectTechnology": ["HTML","LARAVEL"],
+    "projectLinks": {
+        "hostLink":"https://www.tribalboxstudio.com/"
+    }
+  },
+  {
+    "id": 2,
+    "projectName": "Homevana",
+    "projectDescription": "A digital platform for handling rent collection, maintenance, and tenant communication.",
+    "projectDetailLink":"",
+    "projectTechnology": ["REACT.JS","LARAVEL"],
+    "projectLinks": {
+        "githubLink":"",
+        "hostLink":"https://homevana.in/application/"
+    }
+  },
+  {
+    "id": 3,
+    "projectName": "The Concept Co.",
+    "projectDescription": "A visual merchandising website helping brands create engaging in-store experiences.",
+    "projectDetailLink":"",
+    "projectTechnology": ["REACT.JS","LARAVEL"],
+    "projectLinks": {
+        "githubLink":"",
+        "hostLink":"https://www.conceptco.co/"
+    }
+  },
+  {
+    "id": 4,
+    "projectName": "Simandhar Education",
+    "projectDescription": "A leading platform offering professional courses like CPA, CMA, EA, and CIA.",
+    "projectDetailLink":"",
+    "projectTechnology": ["REACT.JS","NODE.JS"],
+    "projectLinks": {
+        "githubLink":"",
+        "hostLink":"https://www.simandhareducation.com/"
+    }
+  },
+  {
+    "id": 5,
+    "projectName": "Tenderd",
+    "projectDescription": "An AI platform that helps manage equipment and fleets more efficiently, safety, and productivity.",
+    "projectDetailLink":"",
+    "projectTechnology": ["HTML","WORDPRESS"],
+    "projectLinks": {
+        "githubLink":"",
+        "hostLink":"https://tenderd.com/"
+    }
+  }
+]

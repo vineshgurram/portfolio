@@ -1,6 +1,14 @@
 .bs-tab {
     &.typ-experience-tab {
-        @include grid($columns: 200px auto,$gap:80px);
+        @include grid($columns: 300px auto,$gap:80px);
+        
+        @media screen and (max-width: $tablet-breakpoint) {
+            @include grid($columns: 200px auto,$gap:30px);
+        }
+       
+        @media screen and (max-width: $tablet-breakpoint) {
+            @include grid($columns: 1fr);
+        }
         .nav {
             &.nav-tabs {
                 flex-direction: column;
