@@ -4,7 +4,7 @@ import ExperienceSectionData from "../json/experience.json";
 
 export default function ExperienceSection() {
   return (
-    <section className="lyt-section typ-experience-section">
+    <section className="lyt-section typ-experience-section" id="section-experience">
       <Container>
         <div className="wrapper">
           <h2 className="bs-heading typ-18 typ-300 text-uppercase mb-50">
@@ -16,7 +16,7 @@ export default function ExperienceSection() {
               id="experience-tab"
             >
               {ExperienceSectionData.map((exp, index) => (
-                <Tab eventKey={exp.companyName} title={exp.companyName}>
+                <Tab  key={exp.companyName}  eventKey={exp.companyName} title={exp.companyName}>
                   <div className="tab-content-wrapper">
                     <div className="d-flex align-lg-items-center justify-content-between flex-nowrap mb-3 flex-lg-row flex-column">
                       <h3 className="bs-heading typ-24 typ-300 m-0">

@@ -32,7 +32,7 @@ export default function Header() {
                 <Nav defaultActiveKey="/" className="flex-lg-column-row">
                   <ul className="nav-list">
                     <li className="nav-item">
-                      <a href="#" className="nav-link">
+                      <a href="#section-project" className="nav-link">
                         Projects
                       </a>
                     </li>
@@ -42,7 +42,7 @@ export default function Header() {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#" className="nav-link">
+                      <a href="#section-footer" className="nav-link">
                         Contact
                       </a>
                     </li>

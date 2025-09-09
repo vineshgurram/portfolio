@@ -1,7 +1,7 @@
 import { Row, Col } from "react-bootstrap";
 export default function Footer() {
   return (
-    <footer className="bs-footer">
+    <footer className="bs-footer" id="section-footer">
       <div className="container">
         <div className="wrapper">
           <Row className="g-0">

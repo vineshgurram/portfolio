@@ -2,6 +2,7 @@
   {
     "id": 1,
     "projectName": "Tribal Box Studio",
+    "projectImage": "images/TribalBox.jpg",
     "projectDescription": "A video production website helping brands turn ideas into impactful visual stories.",
     "projectDetailLink":"",
     "projectTechnology": ["HTML","LARAVEL"],
@@ -12,17 +13,19 @@
   {
     "id": 2,
     "projectName": "Homevana",
+    "projectImage": "images/Homevana.jpg",
     "projectDescription": "A digital platform for handling rent collection, maintenance, and tenant communication.",
     "projectDetailLink":"",
     "projectTechnology": ["REACT.JS","LARAVEL"],
     "projectLinks": {
         "githubLink":"",
-        "hostLink":"https://homevana.in/application/"
+        "hostLink":"https://homevana.in/"
     }
   },
   {
     "id": 3,
     "projectName": "The Concept Co.",
+    "projectImage": "images/Conceptco.jpg",
     "projectDescription": "A visual merchandising website helping brands create engaging in-store experiences.",
     "projectDetailLink":"",
     "projectTechnology": ["REACT.JS","LARAVEL"],
@@ -34,6 +37,7 @@
   {
     "id": 4,
     "projectName": "Simandhar Education",
+    "projectImage": "images/Simandhar.jpg",
     "projectDescription": "A leading platform offering professional courses like CPA, CMA, EA, and CIA.",
     "projectDetailLink":"",
     "projectTechnology": ["REACT.JS","NODE.JS"],
@@ -45,6 +49,7 @@
   {
     "id": 5,
     "projectName": "Tenderd",
+    "projectImage": "images/Tendered.jpg",
     "projectDescription": "An AI platform that helps manage equipment and fleets more efficiently, safety, and productivity.",
     "projectDetailLink":"",
     "projectTechnology": ["HTML","WORDPRESS"],

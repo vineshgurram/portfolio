@@ -16,6 +16,8 @@
                 object-fit: cover;
                 object-position: center;
                 transition: 500ms ease all;
+                height: 200px;
+                max-height: 200px;
             }
         }
 

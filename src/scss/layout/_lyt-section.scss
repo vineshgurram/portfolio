@@ -2,7 +2,7 @@
     .wrapper {
         padding: 100px 0;
 
-        &.border-top-1{
+        &.border-top-1 {
             border-top: 1px solid $clr-white;
         }
     }
@@ -10,10 +10,54 @@
     &.typ-hero-section {
         padding: 100px 0 150px;
         background-color: $bg-secondary;
+
+        .link {
+            text-decoration: none;
+
+            @media screen and (min-width: $tablet-breakpoint) {
+                position: relative;
+                margin-top: 50px;
+                display: inline-block;
+
+                .arrow{
+                    transition: 500ms ease all;
+                }
+
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    // background: red;
+                    background-image: url(images/avatar-img.jpg);
+                    background-color: $clr-white;
+                    border-radius: 100%;
+                    position: absolute;
+                    left: calc(100% + 10px);
+                    top: -30px;
+                    opacity: 0;
+                    transition: 1s ease all;
+                }
+
+                &:hover {
+                    *{
+                        color: $clr-blue;
+                    }
+
+                    .arrow{
+                        transform: translateX(15px);
+                    }
+
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 
     &.typ-project-section {
-        
     }
 
     &.typ-education-section {
@@ -24,21 +68,20 @@
     .lyt-section {
         .wrapper {
             padding: 70px 0;
-    
-            &.border-top-1{
+
+            &.border-top-1 {
                 border-top: 1px solid $clr-white;
             }
         }
-    
+
         &.typ-hero-section {
             padding: 70px 0 70px;
             background-color: $bg-secondary;
         }
-    
+
         &.typ-project-section {
-            
         }
-    
+
         &.typ-education-section {
         }
     }
