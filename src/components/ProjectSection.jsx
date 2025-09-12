@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import DummyImage from "/images/Sugar-Cream.webp";
 import projects from "../json/projects.json";
 import ProjectCard from "./ProjectCard";
 
@@ -8,7 +7,7 @@ export default function ProjectSection() {
     <section className="lyt-section typ-project-section" id="section-project">
       <Container>
         <div className="wrapper border-top-1">
-          <h2 className="bs-heading typ-18 typ-300 text-uppercase mb-50">
+          <h2 className="bs-heading typ-18 typ-300 text-uppercase mb-50" data-aos="fade">
             FEATURED PROJECTS
           </h2>
           <Row className="g-5">

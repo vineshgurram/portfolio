@@ -1,7 +1,7 @@
 .bs-footer {
     border-top: 1px solid $clr-white1;
     .wrapper {
-        padding: 80px 0 80px;
+        padding: 80px 0 40px;
 
         @media screen and (max-width: $mobile-breakpoint) {
             padding: 50px 0;
@@ -18,7 +18,7 @@
 
         .contact-txt {
             font-family: $fnt1;
-            font-size: 18px;
+            font-size: 14px;
             line-height: 1.2;
             color: $clr-white;
             font-weight: $font-light;
@@ -76,6 +76,37 @@
                     .icon {
                         &::before {
                             color: $clr-blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .copyright-text {
+            .bs-para {
+                a {
+                    position: relative;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        background-image: url($avatar-img);
+                        background-position: center;
+                        background-size: 100%;
+                        background-color: $clr-white;
+                        border-radius: 100%;
+                        position: absolute;
+                        left: calc(100% + 5px);
+                        top: -30px;
+                        opacity: 0;
+                        transition: 1s ease all;
+                    }
+
+                    &:hover {
+                        color: $clr-white;
+                        &:after {
+                            opacity: 1;
                         }
                     }
                 }

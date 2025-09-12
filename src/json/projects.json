@@ -57,5 +57,17 @@
         "githubLink":"",
         "hostLink":"https://tenderd.com/"
     }
+  },
+  {
+    "id": 6,
+    "projectName": "ElleQuinn",
+    "projectImage": "images/Ellequinn.jpg",
+    "projectDescription": "ElleQuinn is a premier PR agency in Mumbai, specializing in strategic media relations, brand communication, and reputation management",
+    "projectDetailLink":"",
+    "projectTechnology": ["HTML","CODEIGNITER"],
+    "projectLinks": {
+        "githubLink":"",
+        "hostLink":"https://www.ellequinn.com/"
+    }
   }
 ]

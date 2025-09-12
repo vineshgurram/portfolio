@@ -1,9 +1,11 @@
 export default function ProjectCard({projectImage,projectName,projectDescription,projectLinks,projectTechnology}) {
   return (
     <>
-      <div className="bs-card typ-projects">
+      <div className="bs-card typ-projects" data-aos="fade-up">
         <div className="image-box-wrapper">
-          <img src={projectImage} className="img-fluid" alt="" />
+          <a href={projectLinks.hostLink} target="_blank" rel="nofollow">
+          <img src={projectImage} className="img-fluid" alt="Thumbnail image for Project" />
+          </a>
         </div>
         <div className="content-box-wrapper">
           <div className="d-flex justify-content-between align-items-center flex-nowrap py-3">

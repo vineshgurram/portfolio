@@ -1,13 +1,49 @@
 import { Nav, Navbar, Offcanvas, Container } from "react-bootstrap";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router";
-export default function Header() {
-  const [show, setShow] = useState(false);
+import Lenis from "lenis";
 
+export default function Header() {
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScroll, setLastScroll] = useState(0);
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  useEffect(() => {
+    // init Lenis
+    const lenis = new Lenis({ smooth: true });
+    document.documentElement.style.scrollBehavior = "auto";
+
+    let rafId;
+    function raf(time) {
+      lenis.raf(time);
+      rafId = requestAnimationFrame(raf);
+    }
+    rafId = requestAnimationFrame(raf);
+
+    // subscribe to Lenis scroll event
+    lenis.on("scroll", ({ scroll }) => {
+      if (scroll > lastScroll && scroll > 80) {
+        // scrolling down
+        setShowHeader(false);
+      } else {
+        // scrolling up
+        setShowHeader(true);
+      }
+      setLastScroll(scroll);
+    });
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      if (typeof lenis.destroy === "function") lenis.destroy();
+    };
+  }, [lastScroll]);
+
   return (
-    <header className="bs-header sticky-top">
+    <header className="bs-header sticky-top"  style={{
+          transform: showHeader ? "translateY(0)" : "translateY(-100%)"
+        }}>
       <Container>
         <div className="d-flex flex-lg-row flex-row-reverse justify-content-between">
           <Navbar.Toggle onClick={handleShow} className="d-lg-none" />
@@ -24,7 +60,12 @@ export default function Header() {
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
                   <div className="logo-wrap">
-                    <h3 className="logo-txt mb-0" style={{ color: '#fff',fontWeight:300 }}>VG.</h3>
+                    <h3
+                      className="logo-txt mb-0"
+                      style={{ color: "#fff", fontWeight: 300 }}
+                    >
+                      VG.
+                    </h3>
                   </div>
                 </Offcanvas.Title>
               </Offcanvas.Header>
@@ -37,7 +78,11 @@ export default function Header() {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="#" className="nav-link">
+                      <a
+                        href="https://drive.google.com/file/d/1NbkaUzwVLoq-ay_N9SgmH9TwNHttaYhg/view?usp=sharing"
+                        className="nav-link"
+                        target="_blank"
+                      >
                         Resume
                       </a>
                     </li>

@@ -1,5 +1,17 @@
 .bs-header {
     background-color: $bg-secondary;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 111;
+
     @media screen and (max-width: 1024px) {
         padding: 30px;
     }
@@ -62,6 +74,10 @@
                             color: inherit;
                             font-weight: inherit;
                             font-size: inherit;
+
+                            &:hover{
+                                color: $clr-blue;
+                            }
                         }
                     }
                 }
@@ -79,7 +95,7 @@
 @media screen and (max-width: $tablet-breakpoint) {
     .bs-header {
         background-color: $bg-secondary;
-                border-bottom: 1px solid;
+        border-bottom: 1px solid;
 
         .wrapper {
             padding: 0;
@@ -120,9 +136,9 @@
         font-weight: $font-medium;
         letter-spacing: 1px;
         display: block;
-        
-        .nav-item{
-            .nav-link{
+
+        .nav-item {
+            .nav-link {
                 color: inherit;
                 padding: 0;
                 padding-bottom: 20px;
@@ -134,7 +150,7 @@
 .offcanvas-header {
     background-color: $bg-secondary;
 
-    .btn-close{
+    .btn-close {
         background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E");
     }
 }

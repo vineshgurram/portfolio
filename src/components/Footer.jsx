@@ -1,15 +1,15 @@
 import { Row, Col } from "react-bootstrap";
 export default function Footer() {
   return (
-    <footer className="bs-footer">
+    <footer className="bs-footer" id="section-footer">
       <div className="container">
         <div className="wrapper">
-          <Row className="g-0">
-            <Col lg={5}>
-              <h2 className="logo-txt me-4 mb-3">VG</h2>
+          <Row className="g-0 justify-content-between mb-5">
+            <Col lg={6}>
+              <h2 className="logo-txt me-4 mb-3">VG.</h2>
               <h3 className="contact-txt">FRONT-END DEVELOPER</h3>
             </Col>
-            <Col lg={7}>
+            <Col lg={5}>
               <div className="contact-box-wrapper pt-lg-0 pt-4">
                 <a
                   href="mailto:vineshgurram@gmail.com"
@@ -44,8 +44,10 @@ export default function Footer() {
             </Col>
           </Row>
           <Row>
-            <Col>
-            {/* <p>© Copyright 2022. Made by Elias</p> */}
+            <Col md={12}>
+            <div className="copyright-text">
+            <p className="bs-para typ-16 typ-300 mb-0">© Copyright 2025. Made by <a href="https://www.linkedin.com/in/vineshgurram/" target="_blank" className="bs-para typ-300 typ-clr-blue ">Vinesh Gurram</a></p>
+            </div>
             </Col>
           </Row>
         </div>

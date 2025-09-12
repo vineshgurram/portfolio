@@ -8,9 +8,9 @@ export default function ExperienceSection() {
       <Container>
         <div className="wrapper">
           <h2 className="bs-heading typ-18 typ-300 text-uppercase mb-50">
-            EXPERIENCE
+            WORK EXPERIENCE
           </h2>
-          <div className="bs-tab typ-experience-tab">
+          <div className="bs-tab typ-experience-tab" data-aos="fade-up" data-aos-delay="100">
             <Tabs
               defaultActiveKey={ExperienceSectionData[0].companyName}
               id="experience-tab"
