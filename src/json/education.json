@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "courseName": "Bachelor of Science in Information Technology",
+    "instituteName": "University of Mumbai",
+    "yearOfCourse": "2019 - 2022",
+    "location": "Mumbai, India",
+    "description": ""
+  },
+  {
+    "id": 2,
+    "courseName": "HSC - Higher Secondary Certificate(Commerce)",
+    "instituteName": "South Indian Welfare Society College",
+    "yearOfCourse": "2018 - 2019",
+    "location": "Mumbai, India",
+    "description": ""
+  }
+  ,
+  {
+    "id": 3,
+    "courseName": "SSC - Secondary School Certificate",
+    "instituteName": "The Andhra Education Society High School",
+    "yearOfCourse": "2016 - 2017",
+    "location": "Mumbai, India",
+    "description": ""
+  }
+]

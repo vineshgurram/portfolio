@@ -69,5 +69,17 @@
         "githubLink":"",
         "hostLink":"https://www.ellequinn.com/"
     }
+  },
+  {
+    "id": 7,
+    "projectName": "MarioProducts",
+    "projectImage": "images/Mario.jpg",
+    "projectDescription": "MarioProducts is a product showcase website for Mario Confectionery, featuring chocolates, candies, and lollipops with a modern and responsive design.",
+    "projectDetailLink":"",
+    "projectTechnology": ["HTML","ROR"],
+    "projectLinks": {
+        "githubLink":"",
+        "hostLink":"https://www.marioproducts.com/"
+    }
   }
 ]

@@ -28,3 +28,23 @@ body {
 .mb-50 {
     margin-bottom: 50px;
 }
+
+
+
+.name-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade {
+  opacity: 1;
+  animation: fadeEffect 3s infinite;
+}
+
+@keyframes fadeEffect {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}

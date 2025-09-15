@@ -1,6 +1,7 @@
 .bs-heading {
     color: $txt-primary;
     line-height: 1.4;
+    line-height: normal;
 
     &.typ-gradient-1 {
         background: rgb(51, 210, 255);
@@ -34,6 +35,32 @@
             rgba(51, 210, 255, 1) 55%,
             rgba(221, 87, 137, 1) 100%
         );
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &.typ-gradient-3 {
+        background: #833ab4;
+        background: linear-gradient(
+            90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%
+        );
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &.typ-gradient-4 {
+        background: #eeaeca;
+        background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+   
+    &.typ-gradient-5 {
+        background: #22C1C3;
+        background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
@@ -93,8 +120,12 @@
 
 @media screen and (max-width: $mobile-breakpoint) {
     .bs-heading {
-        &.typ-gradient-1 {
-            font-size: 56px;
+        &.typ-gradient-1,
+        &.typ-gradient-2,
+        &.typ-gradient-3,
+        &.typ-gradient-4,
+        &.typ-gradient-5 {
+            font-size: 50px;
         }
     }
 }
