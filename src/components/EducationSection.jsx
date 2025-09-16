@@ -14,8 +14,14 @@ export default function EducationSection() {
           </h2>
 
           <div className="education-box-wrapper">
-            {educations.map((education,index) => (
-              <div className={`education-box ${index !== educations.length - 1 ? "mb-5" : ""}`} key={education.id}data-aos="fade-up">
+            {educations.map((education, index) => (
+              <div
+                className={`education-box ${
+                  index !== educations.length - 1 ? "mb-5" : ""
+                }`}
+                key={education.id}
+                data-aos="fade-up"
+              >
                 <Row>
                   <Col md={9}>
                     <div className="left-box">
@@ -23,7 +29,7 @@ export default function EducationSection() {
                         {education.instituteName}
                       </h3>
                       <p className="bs-para typ-14 typ-clr-blue typ-300 typ-16 mb-2">
-                        {education.location}
+                        {education.universityName}
                       </p>
                       <p className="bs-para typ-14 typ-txt-secondary typ-300 typ-16 m-0">
                         - {education.courseName}

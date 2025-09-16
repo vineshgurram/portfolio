@@ -32,12 +32,12 @@ body {
 
 
 .name-text {
-  font-size: 2.5rem;
-  font-weight: bold;
+//   font-size: 2.5rem;
+//   font-weight: bold;
   transition: opacity 0.8s ease-in-out;
 }
 
-.fade {
+.name-text.fade {
   opacity: 1;
   animation: fadeEffect 3s infinite;
 }

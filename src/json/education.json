@@ -2,18 +2,18 @@
   {
     "id": 1,
     "courseName": "BSC(IT) - Bachelor of Science in Information Technology",
-    "instituteName": "University of Mumbai",
+    "instituteName": "Guru Nanak College of Arts, Science and Commerce",
     "yearOfCourse": "2019 - 2022",
-    "location": "Mumbai, India",
-    "description": ""
+    "location": "GTB Nagar, Mumbai",
+    "universityName": "University of Mumbai"
   },
   {
     "id": 2,
     "courseName": "HSC - Higher Secondary Certificate(Commerce)",
     "instituteName": "South Indian Welfare Society College",
     "yearOfCourse": "2018 - 2019",
-    "location": "Mumbai, India",
-    "description": ""
+    "location": "Wadala, Mumbai",
+    "universityName": "Maharashtra State Board"
   }
   ,
   {
@@ -21,7 +21,7 @@
     "courseName": "SSC - Secondary School Certificate",
     "instituteName": "The Andhra Education Society High School",
     "yearOfCourse": "2016 - 2017",
-    "location": "Mumbai, India",
-    "description": ""
+    "location": "Wadala, Mumbai",
+    "universityName": "Maharashtra State Board"
   }
 ]
